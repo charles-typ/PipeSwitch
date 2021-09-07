@@ -7,6 +7,7 @@ class ModelSummary():
     def __init__(self, model_name, TERMINATE_SIGNAL,
                  param_trans_pipe):
         """ """
+        self.hook_count = 0
         self.model_name = model_name
         self.TERMINATE_SIGNAL = TERMINATE_SIGNAL
         self.param_trans_pipe = param_trans_pipe
@@ -31,24 +32,66 @@ class ModelSummary():
             mod.initialized = False
             def hook_wait_for_parameter_lock(mod, input):
                 if not mod.initialized:
-                    complete_name = self.param_trans_pipe.recv()
-                    if complete_name != mod.fullname:
-                        raise Exception('Invalid complete trans')
+                    #complete_name = self.param_trans_pipe.recv()
+                    ##print("Complete name is: ", complete_name)
+                    ##print("Mod full name is: ", mod.fullname)
+                    #if complete_name != mod.fullname:
+                    #    raise Exception('Invalid complete trans')
                     mod.initialized = True
             mod.register_forward_pre_hook(hook_wait_for_parameter_lock)
 
     def insert_terminate_hook(self, mod):
         """ """
         def hook_terminate(mod, input, output):
+            #print("Call hook 1", flush=True)
             torch.cuda.synchronize()
+            #print("Call hook 2", flush=True)
+            #print("Call hook 3", flush=True)
             if self.TERMINATE_SIGNAL[0] == 2:
+                print("hook terminate")
                 raise Exception('terminate signal received')
         if len(list(mod.children())) == 0:
+            print("Mod is: ", mod)
             mod.register_forward_hook(hook_terminate)
             mod.register_backward_hook(hook_terminate)
+            self.hook_count = self.hook_count + 1
         else:
             for child in mod.children():
                 self.insert_terminate_hook(child)
+
+    def insert_less_terminate_hook(self, mod):
+        """ """
+        def hook_terminate(mod, input, output):
+            #print("Call hook 1", flush=True)
+            torch.cuda.synchronize()
+            #print("Call hook 2", flush=True)
+            #print("Call hook 3", flush=True)
+            if self.TERMINATE_SIGNAL[0] == 2:
+                print("hook terminate")
+                raise Exception('terminate signal received')
+        for child in mod.children():
+            print("Mod is: ", child)
+            child.register_forward_hook(hook_terminate)
+            self.hook_count = self.hook_count + 1
+
+    def insert_custom_terminate_hook(self, mod, layer, cur_layer):
+        """ """
+        def hook_terminate(mod, input, output):
+            #print("Call hook 1", flush=True)
+            torch.cuda.synchronize()
+            #print("Call hook 2", flush=True)
+            #print("Call hook 3", flush=True)
+            if self.TERMINATE_SIGNAL[0] == 2:
+                print("hook terminate")
+                raise Exception('terminate signal received')
+        if len(list(mod.children())) == 0 or cur_layer == layer:
+            print("Mod is: ", mod)
+            mod.register_forward_hook(hook_terminate)
+            mod.register_backward_hook(hook_terminate)
+            self.hook_count = self.hook_count + 1
+        else:
+            for child in mod.children():
+                self.insert_custom_terminate_hook(child, layer, cur_layer + 1)
 
     def load_model(self):
         model_module = importlib.import_module('task.' + self.model_name)
@@ -62,8 +105,12 @@ class ModelSummary():
         self.insert_lock_hook(self.shape_summary_list)
 
         # Add hooks for termination in both forward and backward propagations
-        if 'training' in self.model_name:
-            self.insert_terminate_hook(self.model)
+        #if 'training' in self.model_name:
+        #    self.insert_terminate_hook(self.model)
+        #self.insert_terminate_hook(self.model)
+        #self.insert_less_terminate_hook(self.model)
+        #self.insert_custom_terminate_hook(self.model, 1, 0)
+        print("Number of hooks inserted is: ", self.hook_count, flush=True)
 
         # Allocate fake memory for parameters
         self.cuda_stream_for_parameter = torch.cuda.Stream()

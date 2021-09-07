@@ -7,6 +7,7 @@ import torch.multiprocessing as mp
 from pipeswitch.frontend_tcp import FrontendTcpThd
 from pipeswitch.frontend_schedule import FrontendScheduleThd
 from pipeswitch.worker import WorkerProc
+from pipeswitch.worker_orig import WorkerProc_orig
 from util.util import timestamp, TcpAgent, TcpServer
 
 def main():
@@ -14,6 +15,7 @@ def main():
 
     # Load model list
     model_list_file_name = sys.argv[1]
+    orig = sys.argv[2]
     model_list = []
     with open(model_list_file_name) as f:
         for line in f.readlines():
@@ -26,11 +28,16 @@ def main():
     # Create workers
     num_workers = 2
     worker_list = []
-    for _ in range(num_workers):
+    for k in range(num_workers):
         p_parent, p_child = mp.Pipe()
         param_trans_parent, param_trans_child = mp.Pipe()
         term_parent, term_child = mp.Pipe()
-        worker = WorkerProc(model_list, p_child, param_trans_child, term_child)
+        if orig == '1':
+            print("Original worker here")
+            worker = WorkerProc_orig(model_list, p_child, param_trans_child, term_child, k)
+        else:
+            print("New worker here")
+            worker = WorkerProc(model_list, p_child, param_trans_child, term_child, k)
         worker.start()
         torch.cuda.send_shared_cache()
         worker_list.append((p_parent, worker, param_trans_parent, term_parent))

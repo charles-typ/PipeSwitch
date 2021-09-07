@@ -3,7 +3,8 @@ import time
 import socket
 
 def timestamp(name, stage):
-    print ('TIMESTAMP, %s, %s, %f' % (name, stage, time.time()), file=sys.stderr)
+    #print ('TIMESTAMP, %s, %s, %f' % (name, stage, time.time()),flush=True)
+    pass
 
 class TcpServer():
     def __init__(self, address, port):

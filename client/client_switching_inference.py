@@ -47,52 +47,53 @@ def main():
     batch_size = int(sys.argv[2])
 
     task_name_inf = '%s_inference' % model_name
-    task_name_train = '%s_training' % model_name
 
     # Load image
     data = get_data(model_name, batch_size)
 
     latency_list = []
-    num_iter = 1
-    for _ in range(20):
-        # Send training request
-        client_train = TcpClient('localhost', 12345)
-        send_request(client_train, task_name_train, None)
-        time.sleep(4)
+    for k in range(20):
 
         # Connect
-        client_inf = TcpClient('localhost', 12345)
-        timestamp('client', 'after_inference_connect')
-        time_1 = time.time()
+        num_parallel_request = 1
+        client_list = []
+        client_inf_2 = TcpClient('localhost', 12345)
+        for i in range(num_parallel_request):
+            client_inf = TcpClient('localhost', 12345)
+            client_list.append(client_inf)
+        for i in range(num_parallel_request):
+            send_request(client_list[i], task_name_inf, data)
 
+        if k == 0:
+            time.sleep(2)
         # Send inference request
-        send_request(client_inf, task_name_inf, data)
+        time.sleep(5 / 1000)
+        time_1 = time.time()
+        send_request(client_inf_2, task_name_inf, data)
 
         # Recv inference reply
-        recv_response(client_inf)
+        recv_response(client_inf_2)
         time_2 = time.time()
         latency = (time_2 - time_1) * 1000
+        print(latency)
         latency_list.append(latency)
 
-        time.sleep(1)
-        recv_response(client_train)
-        close_connection(client_inf)
-        close_connection(client_train)
+        #time.sleep(1)
+        for i in range(num_parallel_request):
+            recv_response(client_list[i])
+            close_connection(client_list[i])
+        close_connection(client_inf_2)
         time.sleep(1)
         timestamp('**********', '**********')
-        print(latency)
 
     print()
     print()
     print()
-    print(num_iter)
-    if num_iter == 1:
-        stable_latency_list = latency_list
-        print (stable_latency_list)
-    else:
-        stable_latency_list = latency_list[10:]
-        print ('Latency: %f ms (stdev: %f)' % (statistics.mean(stable_latency_list),
-                                               statistics.stdev(stable_latency_list)))
+    stable_latency_list = latency_list[10:]
+    #stable_latency_list = latency_list
+    print (stable_latency_list)
+    print ('Latency: %f ms (stdev: %f)' % (statistics.mean(stable_latency_list),
+                                           statistics.stdev(stable_latency_list)))
 
 if __name__ == '__main__':
     main()

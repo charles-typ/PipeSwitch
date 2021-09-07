@@ -8,9 +8,9 @@ from pipeswitch.worker_common import ModelSummary
 from pipeswitch.worker_terminate import WorkerTermThd
 from util.util import timestamp
 
-class WorkerProc(Process):
+class WorkerProc_orig(Process):
     def __init__(self, model_list, pipe, param_trans_pipe, term_pipe, wrid):
-        super(WorkerProc, self).__init__()
+        super(WorkerProc_orig, self).__init__()
         self.model_list = model_list
         self.pipe = pipe
         self.param_trans_pipe = param_trans_pipe
@@ -61,7 +61,7 @@ class WorkerProc(Process):
             timestamp('worker_proc', 'get_model')
 
             data_b = self.pipe.recv()
-            #print("data recevied in worker is : ", data_b)
+
             timestamp('worker_proc', 'get_data')
 
             # start doing inference
@@ -69,49 +69,32 @@ class WorkerProc(Process):
             # mod_list[0] in to self.complete_queue_trans
             try:
                 #print("Worker id is: ", self.id)
-                if self.id == 1:
+                #if self.id == 1:
                 #    print("Send response 1 ", self.id)
-                #if 'training' in model_name:
+                if 'training' in model_name:
                     self.pipe.send('FNSH')
                     agent.send(b'FNSH')
-                #print("Here 1", flush=True)
 
                 with torch.cuda.stream(model_summary.cuda_stream_for_computation):
-                    #print("Here 2", flush=True)
                     output = model_summary.execute(data_b)
-                    #print("Here 3", flush=True)
-                    self.pipe.send('FNSH')
-                    agent.send(b'FNSH')
+                    #self.pipe.send('FNSH')
+                    #agent.send(b'FNSH')
                     print ('Get output', output)
                     del output
-                #print("Here 4", flush=True)
 
                 #if self.id == 0:
                 #    print("Send response 2 ", self.id)
                 #    self.pipe.send('FNSH')
                 #    agent.send(b'FNSH')
 
-                #if 'inference' in model_name:
-                #    self.pipe.send('FNSH')
-                #    agent.send(b'FNSH')
-            except Exception as e:
-                print("exception: ", e, flush=True)
-                if str(e) == 'Invalid complete trans':
-                    print("sending this response anyway: ", self.id)
+                if 'inference' in model_name:
                     self.pipe.send('FNSH')
                     agent.send(b'FNSH')
-                else:
-                    print(str(e))
+            except Exception as e:
+                #self.pipe.send('FNSH')
+                #agent.send(b'FNSH')
+                print("Exception here: ", e)
                 complete_queue.put('FNSH')
-
-
-            #with torch.cuda.stream(model_summary.cuda_stream_for_computation):
-            #    output = model_summary.execute(data_b)
-            #    self.pipe.send('FNSH')
-            #    agent.send(b'FNSH')
-            #    print ('Get output', output)
-            #    del output
-
 
             # start do cleaning
             TERMINATE_SIGNAL[0] = 0

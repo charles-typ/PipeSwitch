@@ -40,6 +40,7 @@ class FrontendScheduleThd(threading.Thread):
                 # Get next worker to work on request
                 self.cur_w_idx += 1
                 self.cur_w_idx %= len(self.worker_list)
+
             new_pipe, _, param_trans_pipe_parent, _ = self.worker_list[self.cur_w_idx]
             timestamp('schedule', 'get_worker')
 
@@ -65,7 +66,7 @@ class FrontendScheduleThd(threading.Thread):
                 # Transfer parameters to GPU
                 batched_parameter_list = models[hash(model_name)]
                 self._transfer_parameter(new_pipe,
-                                        batched_parameter_list, 
+                                        batched_parameter_list,
                                         cuda_stream_for_parameter,
                                         param_trans_pipe_parent)
                 timestamp('schedule', 'transfer_parameters')
@@ -78,6 +79,8 @@ class FrontendScheduleThd(threading.Thread):
             if model_name != self.cur_w_name:
                 # Clear old worker
                 cur_pipe.send((None, None))
+
+
 
             # Recv response
             self.cur_w_name = model_name
@@ -100,17 +103,19 @@ class FrontendScheduleThd(threading.Thread):
 
         return processed_batched_parameter_list
 
-    def _transfer_parameter(self, pipe, 
-                            batched_parameter_list, 
+    def _transfer_parameter(self, pipe,
+                            batched_parameter_list,
                             cuda_stream_for_parameter,
                             param_trans_pipe):
         param_cuda_list = []
         for param, mod_list in batched_parameter_list:
             with torch.cuda.stream(cuda_stream_for_parameter):
+
                 if param is not None:
                     param_cuda = param.cuda(non_blocking=True)
                     param_cuda_list.append(param_cuda)
                     e = torch.cuda.Event()
                     e.record()
                     e.synchronize()
+
                 param_trans_pipe.send(mod_list[0])

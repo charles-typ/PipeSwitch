@@ -14,7 +14,7 @@ def main():
     data = get_data(model_name, batch_size)
 
     latency_list = []
-    for _ in range(100):
+    for _ in range(20):
         timestamp('client', 'before_request')
 
         # Connect
@@ -56,14 +56,15 @@ def main():
         timestamp('**********', '**********')
         latency = (time_2 - time_1) * 1000
         latency_list.append(latency)
-        
-        # time.sleep(1)
+        print(latency)
+
+        time.sleep(1)
 
     print()
     print()
     print()
     stable_latency_list = latency_list[10:]
-    print ('Latency: %f ms (stdev: %f)' % (statistics.mean(stable_latency_list), 
+    print ('Latency: %f ms (stdev: %f)' % (statistics.mean(stable_latency_list),
                                            statistics.stdev(stable_latency_list)))
 
 if __name__ == '__main__':
