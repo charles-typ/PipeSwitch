@@ -1,4 +1,5 @@
 import importlib
+import time
 
 import torch
 
@@ -78,6 +79,7 @@ class ModelSummary():
         """ """
         def hook_terminate(mod, input, output):
             #print("Call hook 1", flush=True)
+            #print("hook time stamp: ", time.time())
             torch.cuda.synchronize()
             #print("Call hook 2", flush=True)
             #print("Call hook 3", flush=True)
