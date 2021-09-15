@@ -39,6 +39,7 @@ def import_func():
                 with record_function("model_inference"):
                     output = model(input_batch)
                     return output.sum().item()
+        print(prof.key_averages().table(sort_by="cuda_time_total", row_limit=10))
     return inference
 
 def import_task():
