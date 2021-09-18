@@ -95,7 +95,7 @@ class WorkerProc(Process):
                 #    self.pipe.send('FNSH')
                 #    agent.send(b'FNSH')
             except Exception as e:
-                print("exception: ", e, flush=True)
+                print("exception: at " , time.time(), flush=True)
                 if str(e) == 'Invalid complete trans':
                     print("sending this response anyway: ", self.id)
                     self.pipe.send('FNSH')

@@ -27,8 +27,7 @@ def send_request(client, task_name, data):
     client.send(task_name_length_b)
     client.send(task_name_b)
     client.send(length_b)
-    if data_b is not None:
-        client.send(data_b)
+    client.send(data_b)
     timestamp('client', 'after_request_%s' % task_name)
 
 def recv_response(client):
@@ -67,13 +66,15 @@ def main():
         if k == 0:
             time.sleep(2)
         # Send inference request
-        time.sleep(5 / 1000)
+        time.sleep(500 / 1000)
         time_1 = time.time()
         send_request(client_inf_2, task_name_inf, data)
 
         # Recv inference reply
         recv_response(client_inf_2)
         time_2 = time.time()
+        print(time_2)
+        print(time_1)
         latency = (time_2 - time_1) * 1000
         print(latency)
         latency_list.append(latency)
@@ -83,7 +84,7 @@ def main():
             recv_response(client_list[i])
             close_connection(client_list[i])
         close_connection(client_inf_2)
-        time.sleep(1)
+        time.sleep(2)
         timestamp('**********', '**********')
 
     print()

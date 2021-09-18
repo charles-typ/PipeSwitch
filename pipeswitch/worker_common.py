@@ -79,17 +79,17 @@ class ModelSummary():
         """ """
         def hook_terminate(mod, input, output):
             #print("Call hook 1", flush=True)
-            #print("hook time stamp: ", time.time())
+            print("hook time stamp: ", time.time())
             torch.cuda.synchronize()
             #print("Call hook 2", flush=True)
             #print("Call hook 3", flush=True)
             if self.TERMINATE_SIGNAL[0] == 2:
-                print("hook terminate")
+                print("hook terminate: ", time.time())
                 raise Exception('terminate signal received')
         if len(list(mod.children())) == 0 or cur_layer == layer:
-            print("Mod is: ", mod)
+            print("Mod is: ", mod, flush=True)
             mod.register_forward_hook(hook_terminate)
-            mod.register_backward_hook(hook_terminate)
+            #mod.register_backward_hook(hook_terminate)
             self.hook_count = self.hook_count + 1
         else:
             for child in mod.children():
@@ -111,7 +111,7 @@ class ModelSummary():
         #    self.insert_terminate_hook(self.model)
         #self.insert_terminate_hook(self.model)
         #self.insert_less_terminate_hook(self.model)
-        #self.insert_custom_terminate_hook(self.model, 1, 0)
+        self.insert_custom_terminate_hook(self.model, 4, 0)
         print("Number of hooks inserted is: ", self.hook_count, flush=True)
 
         # Allocate fake memory for parameters
