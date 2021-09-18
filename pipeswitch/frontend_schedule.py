@@ -35,13 +35,13 @@ class FrontendScheduleThd(threading.Thread):
 
             # Get current worker
             cur_pipe, _, _, cur_term_pipe = self.worker_list[self.cur_w_idx]
-            if model_name != self.cur_w_name:
-                timestamp ('SCHEDULER', 'Switch task')
-                # Send terminate signal to current worker
-                cur_term_pipe.send('terminate')
-                # Get next worker to work on request
-                self.cur_w_idx += 1
-                self.cur_w_idx %= len(self.worker_list)
+            #if model_name != self.cur_w_name:
+            timestamp ('SCHEDULER', 'Switch task')
+            # Send terminate signal to current worker
+            cur_term_pipe.send('terminate')
+            # Get next worker to work on request
+            self.cur_w_idx += 1
+            self.cur_w_idx %= len(self.worker_list)
 
             new_pipe, _, param_trans_pipe_parent, _ = self.worker_list[self.cur_w_idx]
             timestamp('schedule', 'get_worker')
@@ -51,9 +51,9 @@ class FrontendScheduleThd(threading.Thread):
             timestamp('schedule', 'notify_new_worker')
 
             # Wait for current worker to terminate
-            if model_name != self.cur_w_name:
-                resp = cur_term_pipe.recv()
-                timestamp('schedule', 'terminate_current_worker')
+            #if model_name != self.cur_w_name:
+            resp = cur_term_pipe.recv()
+            timestamp('schedule', 'terminate_current_worker')
 
             # Transfer data to GPU
             data_b = self.qin.get()
