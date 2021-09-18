@@ -3,6 +3,7 @@ import queue
 import struct
 import threading
 import importlib
+import torch
 
 import torch.multiprocessing as mp
 
@@ -39,19 +40,36 @@ def func_schedule(qin):
     while True:
         agent, model_name, data_b = qin.get()
         if active_worker is not None:
-            active_worker.kill()
+#            active_worker.kill()
             active_worker.join()
         active_worker = mp.Process(target=worker_compute, args=(agent, model_name, data_b))
         active_worker.start()
+
+def insert_custom_terminate_hook(mod, layer, cur_layer):
+    """ """
+    def hook_terminate(mod, input, output):
+        #print("Call hook 1", flush=True)
+        #print("hook time stamp: ", time.time())
+        torch.cuda.synchronize()
+        #print("Call hook 2", flush=True)
+        #print("Call hook 3", flush=True)
+    if len(list(mod.children())) == 0 or cur_layer == layer:
+        print("Mod is: ", mod)
+        mod.register_forward_hook(hook_terminate)
+    else:
+        for child in mod.children():
+            insert_custom_terminate_hook(child, layer, cur_layer + 1)
 
 def worker_compute(agent, model_name, data_b):
     # Load model
     model_module = importlib.import_module('task.' + model_name)
     model, func, _ = model_module.import_task()
     data_loader = model_module.import_data_loader()
+    insert_custom_terminate_hook(model, 1, 0)
 
     # Model to GPU
     model = model.to('cuda')
+    #insert_custom_terminate_hook(model, 4, 0)
 
     # Compute
     if 'training' in model_name:
@@ -70,7 +88,7 @@ def worker_compute(agent, model_name, data_b):
         del agent
         timestamp('server', 'reply')
 
-    
+
 
 def main():
     # Create threads and worker process
@@ -83,7 +101,7 @@ def main():
     # Accept connection
     t_get.join()
     t_schedule.join()
-    
+
 
 if __name__ == '__main__':
     mp.set_start_method('spawn')
