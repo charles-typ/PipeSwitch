@@ -4,7 +4,7 @@ import time
 
 import torch
 import numpy
-from torch.profiler import profile, record_function, ProfilerActivity
+#from torch.profiler import profile, record_function, ProfilerActivity
 
 import task.resnet152 as resnet152
 import task.common as util
@@ -31,15 +31,15 @@ def import_func():
         print(threading.currentThread().getName(),
             'resnet152 inference >>>>>>>>>>', time.time(),
             'model status', model.training)
-        #with timer('resnet152 inference func'):
-        data = torch.from_numpy(numpy.frombuffer(data_b, dtype=numpy.float32))
-        input_batch = data.view(-1, 3, 224, 224).cuda(non_blocking=True)
-        with torch.no_grad():
-            with profile(activities=[ProfilerActivity.CPU, ProfilerActivity.CUDA], record_shapes=True) as prof:
-                with record_function("model_inference"):
-                    output = model(input_batch)
-                    return output.sum().item()
-        print(prof.key_averages().table(sort_by="cuda_time_total", row_limit=10))
+        with timer('resnet152 inference func'):
+            data = torch.from_numpy(numpy.frombuffer(data_b, dtype=numpy.float32))
+            input_batch = data.view(-1, 3, 224, 224).cuda(non_blocking=True)
+            with torch.no_grad():
+            #with profile(activities=[ProfilerActivity.CPU, ProfilerActivity.CUDA], record_shapes=True) as prof:
+            #    with record_function("model_inference"):
+                output = model(input_batch)
+        #print(prof.key_averages().table(sort_by="cuda_time_total", row_limit=10))
+                return output.sum().item()
     return inference
 
 def import_task():
