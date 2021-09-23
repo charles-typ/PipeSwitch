@@ -1,0 +1,3379 @@
+Original worker here
+Original worker here
+Mod is:  Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+Mod is:  BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+Mod is:  ReLU(inplace=True)
+Mod is:  MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+  (downsample): Sequential(
+    (0): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+  (downsample): Sequential(
+    (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+    (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+  (downsample): Sequential(
+    (0): Conv2d(512, 1024, kernel_size=(1, 1), stride=(2, 2), bias=False)
+    (1): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+  (downsample): Sequential(
+    (0): Conv2d(1024, 2048, kernel_size=(1, 1), stride=(2, 2), bias=False)
+    (1): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  AdaptiveAvgPool2d(output_size=(1, 1))
+Mod is:  Linear(in_features=2048, out_features=1000, bias=True)
+Number of hooks inserted is:  56
+Mod is:  Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+Mod is:  BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+Mod is:  ReLU(inplace=True)
+Mod is:  MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+  (downsample): Sequential(
+    (0): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+  (downsample): Sequential(
+    (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+    (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+  (downsample): Sequential(
+    (0): Conv2d(512, 1024, kernel_size=(1, 1), stride=(2, 2), bias=False)
+    (1): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+  (downsample): Sequential(
+    (0): Conv2d(1024, 2048, kernel_size=(1, 1), stride=(2, 2), bias=False)
+    (1): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  Bottleneck(
+  (conv1): Conv2d(2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn3): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+)
+Mod is:  AdaptiveAvgPool2d(output_size=(1, 1))
+Mod is:  Linear(in_features=2048, out_features=1000, bias=True)
+Number of hooks inserted is:  56
+MainThread resnet152 inference >>>>>>>>>> 1632430662.3876488 model status False
+hook time stamp:  1632430663.3222814
+hook time stamp:  1632430663.323138
+hook time stamp:  1632430663.3235037
+hook time stamp:  1632430663.3238795
+hook time stamp:  1632430663.3248851
+hook time stamp:  1632430663.3272722
+hook time stamp:  1632430663.3294892
+hook time stamp:  1632430663.3318872
+hook time stamp:  1632430663.3349092
+hook time stamp:  1632430663.336509
+hook time stamp:  1632430663.338142
+hook time stamp:  1632430663.3397832
+hook time stamp:  1632430663.341412
+hook time stamp:  1632430663.3431017
+hook time stamp:  1632430663.3447306
+hook time stamp:  1632430663.346581
+hook time stamp:  1632430663.3493323
+hook time stamp:  1632430663.3506854
+hook time stamp:  1632430663.3519757
+hook time stamp:  1632430663.3532865
+hook time stamp:  1632430663.3546302
+hook time stamp:  1632430663.3559086
+hook time stamp:  1632430663.3572197
+hook time stamp:  1632430663.3585606
+hook time stamp:  1632430663.3598428
+hook time stamp:  1632430663.3611543
+hook time stamp:  1632430663.3624647
+hook time stamp:  1632430663.3637826
+hook time stamp:  1632430663.365101
+hook time stamp:  1632430663.366413
+hook time stamp:  1632430663.367726
+hook time stamp:  1632430663.3690012
+hook time stamp:  1632430663.3703053
+hook time stamp:  1632430663.3716142
+hook time stamp:  1632430663.3729143
+hook time stamp:  1632430663.3742068
+hook time stamp:  1632430663.3755114
+hook time stamp:  1632430663.3768115
+hook time stamp:  1632430663.378114
+hook time stamp:  1632430663.3794281
+hook time stamp:  1632430663.3807065
+hook time stamp:  1632430663.3820171
+hook time stamp:  1632430663.3833272
+hook time stamp:  1632430663.3846316
+hook time stamp:  1632430663.3859305
+hook time stamp:  1632430663.3872187
+hook time stamp:  1632430663.388524
+hook time stamp:  1632430663.3898256
+hook time stamp:  1632430663.3911378
+hook time stamp:  1632430663.3924384
+hook time stamp:  1632430663.3937192
+hook time stamp:  1632430663.395207
+hook time stamp:  1632430663.398503
+hook time stamp:  1632430663.3999746
+hook time stamp:  1632430663.4039161
+hook time stamp:  1632430663.591146
+resnet152 inference func cost 1.2037546634674072
+Get output 0.08333206176757812
+MainThread resnet152 inference >>>>>>>>>> 1632430667.6838953 model status False
+hook time stamp:  1632430667.6860824
+hook time stamp:  1632430667.6869268
+hook time stamp:  1632430667.6872492
+hook time stamp:  1632430667.6875722
+hook time stamp:  1632430667.688452
+hook time stamp:  1632430667.690929
+hook time stamp:  1632430667.6931512
+hook time stamp:  1632430667.6955128
+hook time stamp:  1632430667.6985338
+hook time stamp:  1632430667.700174
+hook time stamp:  1632430667.701792
+hook time stamp:  1632430667.7034862
+hook time stamp:  1632430667.705109
+hook time stamp:  1632430667.7068133
+hook time stamp:  1632430667.7084544
+hook time stamp:  1632430667.7102604
+hook time stamp:  1632430667.7130272
+hook time stamp:  1632430667.7143207
+hook time stamp:  1632430667.7156222
+hook time stamp:  1632430667.716913
+hook time stamp:  1632430667.7182026
+hook time stamp:  1632430667.7195115
+hook time stamp:  1632430667.7207963
+hook time stamp:  1632430667.7220824
+hook time stamp:  1632430667.723364
+hook time stamp:  1632430667.7246566
+hook time stamp:  1632430667.7259445
+hook time stamp:  1632430667.727241
+hook time stamp:  1632430667.728512
+hook time stamp:  1632430667.7298062
+hook time stamp:  1632430667.7311046
+hook time stamp:  1632430667.7323916
+hook time stamp:  1632430667.7336936
+hook time stamp:  1632430667.7349863
+hook time stamp:  1632430667.736278
+hook time stamp:  1632430667.7375731
+hook time stamp:  1632430667.738889
+hook time stamp:  1632430667.7401729
+hook time stamp:  1632430667.7414656
+hook time stamp:  1632430667.7427824
+hook time stamp:  1632430667.7440605
+hook time stamp:  1632430667.745355
+hook time stamp:  1632430667.7466807
+hook time stamp:  1632430667.7479498
+hook time stamp:  1632430667.7492442
+hook time stamp:  1632430667.7505672
+hook time stamp:  1632430667.7518334
+hook time stamp:  1632430667.7531228
+hook time stamp:  1632430667.754418
+hook time stamp:  1632430667.755718
+hook time stamp:  1632430667.7570095
+hook time stamp:  1632430667.758463
+hook time stamp:  1632430667.7617102
+hook time stamp:  1632430667.7632349
+hook time stamp:  1632430667.7643337
+hook time stamp:  1632430667.764496
+resnet152 inference func cost 0.08069539070129395
+Get output 0.08333206176757812
+MainThread resnet152 inference >>>>>>>>>> 1632430671.867031 model status False
+hook time stamp:  1632430671.8692038
+hook time stamp:  1632430671.8699434
+hook time stamp:  1632430671.8702648
+hook time stamp:  1632430671.8705947
+hook time stamp:  1632430671.871476
+hook time stamp:  1632430671.873854
+hook time stamp:  1632430671.8759923
+hook time stamp:  1632430671.878246
+hook time stamp:  1632430671.8809738
+hook time stamp:  1632430671.882509
+hook time stamp:  1632430671.884013
+hook time stamp:  1632430671.8855274
+hook time stamp:  1632430671.88701
+hook time stamp:  1632430671.8885283
+hook time stamp:  1632430671.8900478
+hook time stamp:  1632430671.8916976
+hook time stamp:  1632430671.8942225
+hook time stamp:  1632430671.8954089
+hook time stamp:  1632430671.8965895
+hook time stamp:  1632430671.8977766
+hook time stamp:  1632430671.8989685
+hook time stamp:  1632430671.9001536
+hook time stamp:  1632430671.9013374
+hook time stamp:  1632430671.9025471
+hook time stamp:  1632430671.9036973
+hook time stamp:  1632430671.9048767
+hook time stamp:  1632430671.9060662
+hook time stamp:  1632430671.9072573
+hook time stamp:  1632430671.9084442
+hook time stamp:  1632430671.9096239
+hook time stamp:  1632430671.9108365
+hook time stamp:  1632430671.9119868
+hook time stamp:  1632430671.9131725
+hook time stamp:  1632430671.9143577
+hook time stamp:  1632430671.915551
+hook time stamp:  1632430671.9167352
+hook time stamp:  1632430671.9179175
+hook time stamp:  1632430671.9191103
+hook time stamp:  1632430671.9202983
+hook time stamp:  1632430671.921478
+hook time stamp:  1632430671.9226923
+hook time stamp:  1632430671.9238546
+hook time stamp:  1632430671.9250324
+hook time stamp:  1632430671.926221
+hook time stamp:  1632430671.92741
+hook time stamp:  1632430671.9285932
+hook time stamp:  1632430671.9297774
+hook time stamp:  1632430671.9309645
+hook time stamp:  1632430671.932144
+hook time stamp:  1632430671.93333
+hook time stamp:  1632430671.9345434
+hook time stamp:  1632430671.9358678
+hook time stamp:  1632430671.93861
+hook time stamp:  1632430671.9398987
+hook time stamp:  1632430671.9408486
+hook time stamp:  1632430671.941007
+resnet152 inference func cost 0.07407283782958984
+Get output 0.08333206176757812
+MainThread resnet152 inference >>>>>>>>>> 1632430676.0468261 model status False
+hook time stamp:  1632430676.0490365
+hook time stamp:  1632430676.0497677
+hook time stamp:  1632430676.0500882
+hook time stamp:  1632430676.0504103
+hook time stamp:  1632430676.0512965
+hook time stamp:  1632430676.0536659
+hook time stamp:  1632430676.055803
+hook time stamp:  1632430676.0580523
+hook time stamp:  1632430676.0607867
+hook time stamp:  1632430676.0622873
+hook time stamp:  1632430676.0638106
+hook time stamp:  1632430676.0653107
+hook time stamp:  1632430676.0668519
+hook time stamp:  1632430676.068332
+hook time stamp:  1632430676.0698476
+hook time stamp:  1632430676.0714946
+hook time stamp:  1632430676.073968
+hook time stamp:  1632430676.0751483
+hook time stamp:  1632430676.076322
+hook time stamp:  1632430676.0774975
+hook time stamp:  1632430676.0787032
+hook time stamp:  1632430676.0798512
+hook time stamp:  1632430676.0810266
+hook time stamp:  1632430676.0822031
+hook time stamp:  1632430676.0833955
+hook time stamp:  1632430676.0845718
+hook time stamp:  1632430676.0857515
+hook time stamp:  1632430676.086957
+hook time stamp:  1632430676.0881326
+hook time stamp:  1632430676.0893142
+hook time stamp:  1632430676.0905237
+hook time stamp:  1632430676.0916762
+hook time stamp:  1632430676.0928571
+hook time stamp:  1632430676.094053
+hook time stamp:  1632430676.095222
+hook time stamp:  1632430676.0963995
+hook time stamp:  1632430676.0975819
+hook time stamp:  1632430676.0987751
+hook time stamp:  1632430676.0999124
+hook time stamp:  1632430676.1010828MainThread resnet152 inference >>>>>>>>>> 1632430664.4627547 model status False
+hook time stamp:  1632430665.3713338
+hook time stamp:  1632430665.3720977
+hook time stamp:  1632430665.3724709
+hook time stamp:  1632430665.3728414
+hook time stamp:  1632430665.373873
+hook time stamp:  1632430665.376172
+hook time stamp:  1632430665.3783073
+hook time stamp:  1632430665.3805916
+hook time stamp:  1632430665.383328
+hook time stamp:  1632430665.3848314
+hook time stamp:  1632430665.3863587
+hook time stamp:  1632430665.3878918
+hook time stamp:  1632430665.3894107
+hook time stamp:  1632430665.39096
+hook time stamp:  1632430665.3924792
+hook time stamp:  1632430665.3941555
+hook time stamp:  1632430665.3966491
+hook time stamp:  1632430665.3978064
+hook time stamp:  1632430665.399036
+hook time stamp:  1632430665.4002194
+hook time stamp:  1632430665.4014087
+hook time stamp:  1632430665.4026244
+hook time stamp:  1632430665.4037807
+hook time stamp:  1632430665.4049728
+hook time stamp:  1632430665.406162
+hook time stamp:  1632430665.4073658
+hook time stamp:  1632430665.408551
+hook time stamp:  1632430665.4097404
+hook time stamp:  1632430665.4109523
+hook time stamp:  1632430665.4121382
+hook time stamp:  1632430665.4133234
+hook time stamp:  1632430665.4145398
+hook time stamp:  1632430665.4157026
+hook time stamp:  1632430665.4168873
+hook time stamp:  1632430665.4180715
+hook time stamp:  1632430665.4192762
+hook time stamp:  1632430665.4204586
+hook time stamp:  1632430665.4216495
+hook time stamp:  1632430665.4228642
+hook time stamp:  1632430665.4240408
+hook time stamp:  1632430665.4252126
+hook time stamp:  1632430665.426406
+hook time stamp:  1632430665.427597
+hook time stamp:  1632430665.428782
+hook time stamp:  1632430665.4299726
+hook time stamp:  1632430665.4311695
+hook time stamp:  1632430665.4323556
+hook time stamp:  1632430665.433545
+hook time stamp:  1632430665.4347687
+hook time stamp:  1632430665.4359214
+hook time stamp:  1632430665.4371097
+hook time stamp:  1632430665.438471
+hook time stamp:  1632430665.4412723
+hook time stamp:  1632430665.442604
+hook time stamp:  1632430665.446283
+hook time stamp:  1632430665.6347392
+resnet152 inference func cost 1.1722445487976074
+Get output 0.08333206176757812
+MainThread resnet152 inference >>>>>>>>>> 1632430669.7570512 model status False
+hook time stamp:  1632430669.759381
+hook time stamp:  1632430669.760119
+hook time stamp:  1632430669.760442
+hook time stamp:  1632430669.7607656
+hook time stamp:  1632430669.7616758
+hook time stamp:  1632430669.764064
+hook time stamp:  1632430669.7661726
+hook time stamp:  1632430669.7684488
+hook time stamp:  1632430669.7711768
+hook time stamp:  1632430669.7726908
+hook time stamp:  1632430669.774217
+hook time stamp:  1632430669.7757547
+hook time stamp:  1632430669.7772703
+hook time stamp:  1632430669.7788317
+hook time stamp:  1632430669.7803178
+hook time stamp:  1632430669.7819705
+hook time stamp:  1632430669.784494
+hook time stamp:  1632430669.7856839
+hook time stamp:  1632430669.7869022
+hook time stamp:  1632430669.788065
+hook time stamp:  1632430669.7892506
+hook time stamp:  1632430669.7904468
+hook time stamp:  1632430669.7916417
+hook time stamp:  1632430669.7928064
+hook time stamp:  1632430669.7940073
+hook time stamp:  1632430669.7951965
+hook time stamp:  1632430669.7964036
+hook time stamp:  1632430669.7976105
+hook time stamp:  1632430669.7988353
+hook time stamp:  1632430669.7999933
+hook time stamp:  1632430669.8011858
+hook time stamp:  1632430669.8023784
+hook time stamp:  1632430669.8035798
+hook time stamp:  1632430669.8047726
+hook time stamp:  1632430669.8059716
+hook time stamp:  1632430669.8071759
+hook time stamp:  1632430669.8083715
+hook time stamp:  1632430669.8095767
+hook time stamp:  1632430669.8107996
+hook time stamp:  1632430669.8119972
+hook time stamp:  1632430669.813139
+hook time stamp:  1632430669.814324
+hook time stamp:  1632430669.815522
+hook time stamp:  1632430669.8167117
+hook time stamp:  1632430669.8179016
+hook time stamp:  1632430669.8191001
+hook time stamp:  1632430669.82028
+hook time stamp:  1632430669.8214655
+hook time stamp:  1632430669.8226824
+hook time stamp:  1632430669.8238528
+hook time stamp:  1632430669.8250313
+hook time stamp:  1632430669.8263838
+hook time stamp:  1632430669.829236
+hook time stamp:  1632430669.8305755
+hook time stamp:  1632430669.8314795
+hook time stamp:  1632430669.8316383
+resnet152 inference func cost 0.07468128204345703
+Get output 0.08333206176757812
+MainThread resnet152 inference >>>>>>>>>> 1632430673.9355123 model status False
+hook time stamp:  1632430673.9377315
+hook time stamp:  1632430673.9384644
+hook time stamp:  1632430673.9387925
+hook time stamp:  1632430673.939117
+hook time stamp:  1632430673.9400265
+hook time stamp:  1632430673.9423933
+hook time stamp:  1632430673.944536
+hook time stamp:  1632430673.94684
+hook time stamp:  1632430673.9495096
+hook time stamp:  1632430673.9510303
+hook time stamp:  1632430673.9525445
+hook time stamp:  1632430673.9540749
+hook time stamp:  1632430673.955599
+hook time stamp:  1632430673.9571078
+hook time stamp:  1632430673.958667
+hook time stamp:  1632430673.9602795
+hook time stamp:  1632430673.9627914
+hook time stamp:  1632430673.963964
+hook time stamp:  1632430673.9651384
+hook time stamp:  1632430673.966321
+hook time stamp:  1632430673.967518
+hook time stamp:  1632430673.9686975
+hook time stamp:  1632430673.969882
+hook time stamp:  1632430673.9710753
+hook time stamp:  1632430673.9722588
+hook time stamp:  1632430673.9734411
+hook time stamp:  1632430673.9746504
+hook time stamp:  1632430673.975812
+hook time stamp:  1632430673.9769912
+hook time stamp:  1632430673.9781742
+hook time stamp:  1632430673.9793646
+hook time stamp:  1632430673.9805455
+hook time stamp:  1632430673.9817317
+hook time stamp:  1632430673.9829402
+hook time stamp:  1632430673.984125
+hook time stamp:  1632430673.9853115
+hook time stamp:  1632430673.9865139
+hook time stamp:  1632430673.9876804
+hook time stamp:  1632430673.988868
+hook time stamp:  1632430673.9900434
+hook time stamp:  1632430673.9912415
+hook time stamp:  1632430673.992426
+hook time stamp:  1632430673.9935882
+hook time stamp:  1632430673.994807
+hook time stamp:  1632430673.995955
+hook time stamp:  1632430673.997138
+hook time stamp:  1632430673.9983144
+hook time stamp:  1632430673.9995077
+hook time stamp:  1632430674.0006897
+hook time stamp:  1632430674.0018744
+hook time stamp:  1632430674.0030684
+hook time stamp:  1632430674.0044136
+hook time stamp:  1632430674.00731
+hook time stamp:  1632430674.0086575
+hook time stamp:  1632430674.0095792
+hook time stamp:  1632430674.0097387
+resnet152 inference func cost 0.0743246078491211
+Get output 0.08333206176757812
+MainThread resnet152 inference >>>>>>>>>> 1632430678.117109 model status False
+hook time stamp:  1632430678.1193063
+hook time stamp:  1632430678.1200376
+hook time stamp:  1632430678.1203592
+hook time stamp:  1632430678.1206832
+hook time stamp:  1632430678.121594
+hook time stamp:  1632430678.1239738
+hook time stamp:  1632430678.126094
+hook time stamp:  1632430678.1283605
+hook time stamp:  1632430678.131075
+hook time stamp:  1632430678.1325803
+hook time stamp:  1632430678.1341183
+hook time stamp:  1632430678.135637
+hook time stamp:  1632430678.1371431
+hook time stamp:  1632430678.13869
+hook time stamp:  1632430678.1401794
+hook time stamp:  1632430678.141824
+hook time stamp:  1632430678.1443212
+hook time stamp:  1632430678.1454997
+hook time stamp:  1632430678.1467133
+hook time stamp:  1632430678.147866
+hook time stamp:  1632430678.149045
+hook time stamp:  1632430678.1502295
+hook time stamp:  1632430678.1514258
+hook time stamp:  1632430678.1526034
+hook time stamp:  1632430678.1537952
+hook time stamp:  1632430678.1549826
+hook time stamp:  1632430678.1561646
+hook time stamp:  1632430678.1573453
+hook time stamp:  1632430678.1585462
+hook time stamp:  1632430678.15971
+hook time stamp:  1632430678.160888
+hook time stamp:  1632430678.1620667
+hook time stamp:  1632430678.1632595
+hook time stamp:  1632430678.1644435
+hook time stamp:  1632430678.1656268
+hook time stamp:  1632430678.166837
+hook time stamp:  1632430678.167991
+hook time stamp:  1632430678.1691725
+hook time stamp:  1632430678.1703498
+hook time stamp:  1632430678.1715446
+hook time stamp:  1632430676.102279
+hook time stamp:  1632430676.1034596
+hook time stamp:  1632430676.1046352
+hook time stamp:  1632430676.105816
+hook time stamp:  1632430676.1069994
+hook time stamp:  1632430676.108172
+hook time stamp:  1632430676.1093514
+hook time stamp:  1632430676.1105528
+hook time stamp:  1632430676.111707
+hook time stamp:  1632430676.1128871
+hook time stamp:  1632430676.114082
+hook time stamp:  1632430676.1154056
+hook time stamp:  1632430676.1182818
+hook time stamp:  1632430676.1195614
+hook time stamp:  1632430676.1204963
+hook time stamp:  1632430676.1206577
+resnet152 inference func cost 0.07393074035644531
+Get output 0.08333206176757812
+MainThread resnet152 inference >>>>>>>>>> 1632430680.2280083 model status False
+hook time stamp:  1632430680.2301896
+hook time stamp:  1632430680.230926
+hook time stamp:  1632430680.2312508
+hook time stamp:  1632430680.2315755
+hook time stamp:  1632430680.2324631
+hook time stamp:  1632430680.2348523
+hook time stamp:  1632430680.2369413
+hook time stamp:  1632430680.2392058
+hook time stamp:  1632430680.2419062
+hook time stamp:  1632430680.2434275
+hook time stamp:  1632430680.2449415
+hook time stamp:  1632430680.2464566
+hook time stamp:  1632430680.2479706
+hook time stamp:  1632430680.2494738
+hook time stamp:  1632430680.250997
+hook time stamp:  1632430680.2526336
+hook time stamp:  1632430680.2551436
+hook time stamp:  1632430680.2563167
+hook time stamp:  1632430680.2574906
+hook time stamp:  1632430680.2587013
+hook time stamp:  1632430680.2598555
+hook time stamp:  1632430680.2610304
+hook time stamp:  1632430680.262207
+hook time stamp:  1632430680.2633986
+hook time stamp:  1632430680.2645762
+hook time stamp:  1632430680.265756
+hook time stamp:  1632430680.2669535
+hook time stamp:  1632430680.2681315
+hook time stamp:  1632430680.2693083
+hook time stamp:  1632430680.2705116
+hook time stamp:  1632430680.2716687
+hook time stamp:  1632430680.2728543
+hook time stamp:  1632430680.27403
+hook time stamp:  1632430680.2752123
+hook time stamp:  1632430680.2763853
+hook time stamp:  1632430680.2775636
+hook time stamp:  1632430680.2787695
+hook time stamp:  1632430680.2799172
+hook time stamp:  1632430680.281099
+hook time stamp:  1632430680.2822797
+hook time stamp:  1632430680.283468
+hook time stamp:  1632430680.2846444
+hook time stamp:  1632430680.2858217
+hook time stamp:  1632430680.2870107
+hook time stamp:  1632430680.2881894
+hook time stamp:  1632430680.2893593
+hook time stamp:  1632430680.2905731
+hook time stamp:  1632430680.2917225
+hook time stamp:  1632430680.292902
+hook time stamp:  1632430680.2940714
+hook time stamp:  1632430680.2952418
+hook time stamp:  1632430680.2965863
+hook time stamp:  1632430680.299422
+hook time stamp:  1632430680.3007727
+hook time stamp:  1632430680.301759
+hook time stamp:  1632430680.3019216
+resnet152 inference func cost 0.07401537895202637
+Get output 0.08333206176757812
+MainThread resnet152 inference >>>>>>>>>> 1632430684.3978844 model status False
+hook time stamp:  1632430684.4001262
+hook time stamp:  1632430684.4008586
+hook time stamp:  1632430684.4011815
+hook time stamp:  1632430684.4015062
+hook time stamp:  1632430684.402394
+hook time stamp:  1632430684.4047637
+hook time stamp:  1632430684.4069178
+hook time stamp:  1632430684.4091625
+hook time stamp:  1632430684.4118953
+hook time stamp:  1632430684.4134037
+hook time stamp:  1632430684.4149342
+hook time stamp:  1632430684.416445
+hook time stamp:  1632430684.4179525
+hook time stamp:  1632430684.4194732
+hook time stamp:  1632430684.4209814
+hook time stamp:  1632430684.4226396
+hook time stamp:  1632430684.425123
+hook time stamp:  1632430684.4263
+hook time stamp:  1632430684.427489
+hook time stamp:  1632430684.4286637
+hook time stamp:  1632430684.4298437
+hook time stamp:  1632430684.4310274
+hook time stamp:  1632430684.4322097
+hook time stamp:  1632430684.4333746
+hook time stamp:  1632430684.4345634
+hook time stamp:  1632430684.4357145
+hook time stamp:  1632430684.4368942
+hook time stamp:  1632430684.438077
+hook time stamp:  1632430684.4392626
+hook time stamp:  1632430684.4404364
+hook time stamp:  1632430684.4416103
+hook time stamp:  1632430684.4428196
+hook time stamp:  1632430684.4439783
+hook time stamp:  1632430684.4451506
+hook time stamp:  1632430684.4463308
+hook time stamp:  1632430684.4475155
+hook time stamp:  1632430684.4486866
+hook time stamp:  1632430684.4498646
+hook time stamp:  1632430684.4510531
+hook time stamp:  1632430684.452228
+hook time stamp:  1632430684.4534101
+hook time stamp:  1632430684.4546208
+hook time stamp:  1632430684.455772
+hook time stamp:  1632430684.4569495
+hook time stamp:  1632430684.4581227
+hook time stamp:  1632430684.4593122
+hook time stamp:  1632430684.4604871
+hook time stamp:  1632430684.4616423
+hook time stamp:  1632430684.462847
+hook time stamp:  1632430684.464006
+hook time stamp:  1632430684.4651744
+hook time stamp:  1632430684.4665399
+hook time stamp:  1632430684.4693012
+hook time stamp:  1632430684.4706328
+hook time stamp:  1632430684.4715462
+hook time stamp:  1632430684.4717045
+resnet152 inference func cost 0.07391524314880371
+Get output 0.08333206176757812
+MainThread resnet152 inference >>>>>>>>>> 1632430688.5921147 model status False
+hook time stamp:  1632430688.5943706
+hook time stamp:  1632430688.595106
+hook time stamp:  1632430688.5954263
+hook time stamp:  1632430688.5957496
+hook time stamp:  1632430688.5966277
+hook time stamp:  1632430688.599001
+hook time stamp:  1632430688.6011145
+hook time stamp:  1632430688.6033778
+hook time stamp:  1632430688.6060863
+hook time stamp:  1632430688.607614
+hook time stamp:  1632430688.6090562
+hook time stamp:  1632430688.6105947
+hook time stamp:  1632430688.612081
+hook time stamp:  1632430688.6135924
+hook time stamp:  1632430688.6151152
+hook time stamp:  1632430688.6167555
+hook time stamp:  1632430688.6192546
+hook time stamp:  1632430688.6204307
+hook time stamp:  1632430688.6216085
+hook time stamp:  1632430688.622816
+hook time stamp:  1632430688.6239567
+hook time stamp:  1632430688.6251209
+hook time stamp:  1632430688.626283
+hook time stamp:  1632430688.6274695
+hook time stamp:  1632430688.628651
+hook time stamp:  1632430688.6298263
+hook time stamp:  1632430688.631024
+hook time stamp:  1632430688.632197
+hook time stamp:  1632430688.6333706
+hook time stamp:  1632430688.6345758
+hook time stamp:  1632430688.635728
+hook time stamp:  1632430688.6369061
+hook time stamp:  1632430688.6380854
+hook time stamp:  1632430688.639277
+hook time stamp:  1632430688.6404536
+hook time stamp:  1632430688.641636
+hook time stamp:  1632430688.6428385
+hook time stamp:  1632430688.6439974
+hook time stamp:  1632430688.6451762
+hook time stamp:  1632430688.6463609
+hook time stamp:  1632430688.6475396
+hook time stamp:  1632430688.6487176
+hook time stamp:  1632430688.6498935
+hook time stamp:  1632430688.6510847
+hook time stamp:  1632430688.652248
+hook time stamp:  1632430688.653425
+hook time stamp:  1632430688.654632
+hook time stamp:  1632430688.6557834
+hook time stamp:  1632430688.6569605
+hook time stamp:  1632430688.6581378
+hook time stamp:  1632430688.659321
+hook time stamp:  1632430688.6606588
+hook time stamp:  1632430688.6635096
+hook time stamp:  1632430688.664809
+hook time stamp:  1632430688.665789
+hook time stamp:  1632430688.6659467
+resnet152 inference func cost 0.07392597198486328
+Get output 0.08333206176757812
+MainThread resnet152 inference >>>>>>>>>> 1632430692.7618282 model status False
+hook time stamp:  1632430692.7640562
+hook time stamp:  1632430692.7647903
+hook time stamp:  1632430692.7651112
+hook time stamp:  1632430692.7654355
+hook time stamp:  1632430692.7663116
+hook time stamp:  1632430692.7686913
+hook time stamp:  1632430692.770838
+hook time stamp:  1632430692.773063
+hook time stamp:  1632430692.7757814
+hook time stamp:  1632430692.7772882
+hook time stamp:  1632430692.7788231
+hook time stamp:  1632430692.780318
+hook time stamp:  1632430692.781827
+hook time stamp:  1632430692.783348
+hook time stamp:  1632430692.7848568
+hook time stamp:  1632430692.7865162
+hook time stamp:  1632430692.789016
+hook time stamp:  1632430692.7901897
+hook time stamp:  1632430692.7913785
+hook time stamp:  1632430692.792554
+hook time stamp:  1632430692.7937357
+hook time stamp: 
+hook time stamp:  1632430678.1727285
+hook time stamp:  1632430678.1739087
+hook time stamp:  1632430678.175092
+hook time stamp:  1632430678.176274
+hook time stamp:  1632430678.1774573
+hook time stamp:  1632430678.178667
+hook time stamp:  1632430678.179826
+hook time stamp:  1632430678.1810098
+hook time stamp:  1632430678.1821892
+hook time stamp:  1632430678.1833768
+hook time stamp:  1632430678.1845567
+hook time stamp:  1632430678.1859002
+hook time stamp:  1632430678.1886923
+hook time stamp:  1632430678.1900036
+hook time stamp:  1632430678.1909685
+hook time stamp:  1632430678.1911244
+resnet152 inference func cost 0.07411646842956543
+Get output 0.08333206176757812
+MainThread resnet152 inference >>>>>>>>>> 1632430682.2879288 model status False
+hook time stamp:  1632430682.2901118
+hook time stamp:  1632430682.290851
+hook time stamp:  1632430682.2911754
+hook time stamp:  1632430682.2914994
+hook time stamp:  1632430682.2924116
+hook time stamp:  1632430682.2948108
+hook time stamp:  1632430682.296912
+hook time stamp:  1632430682.2991586
+hook time stamp:  1632430682.3018765
+hook time stamp:  1632430682.3033907
+hook time stamp:  1632430682.3049061
+hook time stamp:  1632430682.306426
+hook time stamp:  1632430682.3079553
+hook time stamp:  1632430682.3094678
+hook time stamp:  1632430682.3110023
+hook time stamp:  1632430682.3126407
+hook time stamp:  1632430682.3151503
+hook time stamp:  1632430682.3163304
+hook time stamp:  1632430682.3175125
+hook time stamp:  1632430682.3187196
+hook time stamp:  1632430682.3198783
+hook time stamp:  1632430682.32104
+hook time stamp:  1632430682.3222232
+hook time stamp:  1632430682.3234131
+hook time stamp:  1632430682.3245983
+hook time stamp:  1632430682.3257804
+hook time stamp:  1632430682.3269749
+hook time stamp:  1632430682.3281496
+hook time stamp:  1632430682.3293326
+hook time stamp:  1632430682.3305376
+hook time stamp:  1632430682.3317068
+hook time stamp:  1632430682.3328648
+hook time stamp:  1632430682.3340669
+hook time stamp:  1632430682.3352416
+hook time stamp:  1632430682.336423
+hook time stamp:  1632430682.337603
+hook time stamp:  1632430682.3388197
+hook time stamp:  1632430682.33997
+hook time stamp:  1632430682.3411589
+hook time stamp:  1632430682.3423398
+hook time stamp:  1632430682.343532
+hook time stamp:  1632430682.3447154
+hook time stamp:  1632430682.3458989
+hook time stamp:  1632430682.3470926
+hook time stamp:  1632430682.348267
+hook time stamp:  1632430682.3494425
+hook time stamp:  1632430682.350656
+hook time stamp:  1632430682.351813
+hook time stamp:  1632430682.352999
+hook time stamp:  1632430682.3541865
+hook time stamp:  1632430682.355368
+hook time stamp:  1632430682.356712
+hook time stamp:  1632430682.3595402
+hook time stamp:  1632430682.360848
+hook time stamp:  1632430682.3617764
+hook time stamp:  1632430682.3619366
+resnet152 inference func cost 0.07410955429077148
+Get output 0.08333206176757812
+MainThread resnet152 inference >>>>>>>>>> 1632430686.4650571 model status False
+hook time stamp:  1632430686.4673321
+hook time stamp:  1632430686.468066
+hook time stamp:  1632430686.4683902
+hook time stamp:  1632430686.4687252
+hook time stamp:  1632430686.4696493
+hook time stamp:  1632430686.4720047
+hook time stamp:  1632430686.4741478
+hook time stamp:  1632430686.4764051
+hook time stamp:  1632430686.4791267
+hook time stamp:  1632430686.4806175
+hook time stamp:  1632430686.4821286
+hook time stamp:  1632430686.4836514
+hook time stamp:  1632430686.4851649
+hook time stamp:  1632430686.4867074
+hook time stamp:  1632430686.4881957
+hook time stamp:  1632430686.489836
+hook time stamp:  1632430686.4923248
+hook time stamp:  1632430686.4934993
+hook time stamp:  1632430686.494712
+hook time stamp:  1632430686.4958694
+hook time stamp:  1632430686.4970527
+hook time stamp:  1632430686.4982338
+hook time stamp:  1632430686.4994318
+hook time stamp:  1632430686.5006053
+hook time stamp:  1632430686.5017984
+hook time stamp:  1632430686.502987
+hook time stamp:  1632430686.504177
+hook time stamp:  1632430686.505347
+hook time stamp:  1632430686.5065653
+hook time stamp:  1632430686.5077267
+hook time stamp:  1632430686.5088844
+hook time stamp:  1632430686.510064
+hook time stamp:  1632430686.5112514
+hook time stamp:  1632430686.5124364
+hook time stamp:  1632430686.5136166
+hook time stamp:  1632430686.514826
+hook time stamp:  1632430686.5159795
+hook time stamp:  1632430686.517144
+hook time stamp:  1632430686.5183237
+hook time stamp:  1632430686.519514
+hook time stamp:  1632430686.5206943
+hook time stamp:  1632430686.521877
+hook time stamp:  1632430686.5230675
+hook time stamp:  1632430686.5242565
+hook time stamp:  1632430686.5254362
+hook time stamp:  1632430686.5266507
+hook time stamp:  1632430686.5278046
+hook time stamp:  1632430686.5289903
+hook time stamp:  1632430686.5301685
+hook time stamp:  1632430686.53136
+hook time stamp:  1632430686.5325358
+hook time stamp:  1632430686.5338871
+hook time stamp:  1632430686.5367153
+hook time stamp:  1632430686.5380244
+hook time stamp:  1632430686.5389519
+hook time stamp:  1632430686.539104
+resnet152 inference func cost 0.07413792610168457
+Get output 0.08333206176757812
+MainThread resnet152 inference >>>>>>>>>> 1632430690.6382017 model status False
+hook time stamp:  1632430690.6404974
+hook time stamp:  1632430690.641231
+hook time stamp:  1632430690.641556
+hook time stamp:  1632430690.6418786
+hook time stamp:  1632430690.6428227
+hook time stamp:  1632430690.6451497
+hook time stamp:  1632430690.647285
+hook time stamp:  1632430690.6495407
+hook time stamp:  1632430690.6522696
+hook time stamp:  1632430690.653777
+hook time stamp:  1632430690.6552935
+hook time stamp:  1632430690.6568046
+hook time stamp:  1632430690.6583197
+hook time stamp:  1632430690.6598485
+hook time stamp:  1632430690.6613684
+hook time stamp:  1632430690.6630466
+hook time stamp:  1632430690.6655555
+hook time stamp:  1632430690.666759
+hook time stamp:  1632430690.6679149
+hook time stamp:  1632430690.6690972
+hook time stamp:  1632430690.6702752
+hook time stamp:  1632430690.6714664
+hook time stamp:  1632430690.6726456
+hook time stamp:  1632430690.6738262
+hook time stamp:  1632430690.6750195
+hook time stamp:  1632430690.6762004
+hook time stamp:  1632430690.6773827
+hook time stamp:  1632430690.678615
+hook time stamp:  1632430690.679736
+hook time stamp:  1632430690.6809008
+hook time stamp:  1632430690.6820827
+hook time stamp:  1632430690.6832771
+hook time stamp:  1632430690.684461
+hook time stamp:  1632430690.6856434
+hook time stamp:  1632430690.6868637
+hook time stamp:  1632430690.6880147
+hook time stamp:  1632430690.6891963
+hook time stamp:  1632430690.6903856
+hook time stamp:  1632430690.6915512
+hook time stamp:  1632430690.6927342
+hook time stamp:  1632430690.6939101
+hook time stamp:  1632430690.695099
+hook time stamp:  1632430690.6962724
+hook time stamp:  1632430690.697458
+hook time stamp:  1632430690.6986537
+hook time stamp:  1632430690.699812
+hook time stamp:  1632430690.7009912
+hook time stamp:  1632430690.702176
+hook time stamp:  1632430690.7033644
+hook time stamp:  1632430690.704551
+hook time stamp:  1632430690.7057364
+hook time stamp:  1632430690.707108
+hook time stamp:  1632430690.709911
+hook time stamp:  1632430690.7112281
+hook time stamp:  1632430690.712152
+hook time stamp:  1632430690.7123125
+resnet152 inference func cost 0.07421135902404785
+Get output 0.08333206176757812
+MainThread resnet152 inference >>>>>>>>>> 1632430694.8083892 model status False
+hook time stamp:  1632430694.8106675
+hook time stamp:  1632430694.8114014
+hook time stamp:  1632430694.811726
+hook time stamp:  1632430694.8120487
+hook time stamp:  1632430694.812958
+hook time stamp:  1632430694.8153276
+hook time stamp:  1632430694.817461
+hook time stamp:  1632430694.8197331
+hook time stamp:  1632430694.8224454
+hook time stamp:  1632430694.8239686
+hook time stamp:  1632430694.8254924
+hook time stamp:  1632430694.8270123
+hook time stamp:  1632430694.8285205
+hook time stamp:  1632430694.8300364
+hook time stamp:  1632430694.831558
+hook time stamp:  1632430694.833196
+hook time stamp:  1632430694.8357136
+hook time stamp:  1632430694.8368902
+hook time stamp:  1632430694.8380716
+hook time stamp:  1632430694.8392768
+hook time stamp:  1632430694.8404253
+hook time stamp:  1632430694.841585 1632430692.7949393
+hook time stamp:  1632430692.7961364
+hook time stamp:  1632430692.797308
+hook time stamp:  1632430692.7984967
+hook time stamp:  1632430692.7996607
+hook time stamp:  1632430692.8008363
+hook time stamp:  1632430692.8020093
+hook time stamp:  1632430692.8031988
+hook time stamp:  1632430692.8043609
+hook time stamp:  1632430692.805536
+hook time stamp:  1632430692.8067558
+hook time stamp:  1632430692.807893
+hook time stamp:  1632430692.809072
+hook time stamp:  1632430692.8102493
+hook time stamp:  1632430692.8114378
+hook time stamp:  1632430692.8126101
+hook time stamp:  1632430692.813791
+hook time stamp:  1632430692.8149755
+hook time stamp:  1632430692.816154
+hook time stamp:  1632430692.8173306
+hook time stamp:  1632430692.8185363
+hook time stamp:  1632430692.8196764
+hook time stamp:  1632430692.820852
+hook time stamp:  1632430692.8220272
+hook time stamp:  1632430692.8232207
+hook time stamp:  1632430692.8243916
+hook time stamp:  1632430692.8255658
+hook time stamp:  1632430692.8267722
+hook time stamp:  1632430692.8279192
+hook time stamp:  1632430692.8290968
+hook time stamp:  1632430692.8304348
+hook time stamp:  1632430692.8332226
+hook time stamp:  1632430692.8346007
+hook time stamp:  1632430692.8355088
+hook time stamp:  1632430692.835669
+resnet152 inference func cost 0.07393598556518555
+Get output 0.08333206176757812
+MainThread resnet152 inference >>>>>>>>>> 1632430696.9299963 model status False
+hook time stamp:  1632430696.9322248
+hook time stamp:  1632430696.9329574
+hook time stamp:  1632430696.9332805
+hook time stamp:  1632430696.9336047
+hook time stamp:  1632430696.9345138
+hook time stamp:  1632430696.936863
+hook time stamp:  1632430696.9390047
+hook time stamp:  1632430696.9412124
+hook time stamp:  1632430696.9439297
+hook time stamp:  1632430696.9454327
+hook time stamp:  1632430696.9469671
+hook time stamp:  1632430696.9485254
+hook time stamp:  1632430696.9500272
+hook time stamp:  1632430696.9515462
+hook time stamp:  1632430696.9530551
+hook time stamp:  1632430696.9547303
+hook time stamp:  1632430696.9572046
+hook time stamp:  1632430696.9583814
+hook time stamp:  1632430696.9595716
+hook time stamp:  1632430696.960746
+hook time stamp:  1632430696.9619248
+hook time stamp:  1632430696.9631073
+hook time stamp:  1632430696.964295
+hook time stamp:  1632430696.9654725
+hook time stamp:  1632430696.966682
+hook time stamp:  1632430696.9678335
+hook time stamp:  1632430696.9690084
+hook time stamp:  1632430696.9701867
+hook time stamp:  1632430696.9713764
+hook time stamp:  1632430696.9725552
+hook time stamp:  1632430696.9737303
+hook time stamp:  1632430696.9749348
+hook time stamp:  1632430696.9761128
+hook time stamp:  1632430696.97729
+hook time stamp:  1632430696.9784925
+hook time stamp:  1632430696.97966
+hook time stamp:  1632430696.9808347
+hook time stamp:  1632430696.9820142
+hook time stamp:  1632430696.9831965
+hook time stamp:  1632430696.984394
+hook time stamp:  1632430696.9855616
+hook time stamp:  1632430696.9867685
+hook time stamp:  1632430696.9879205
+hook time stamp:  1632430696.9890962
+hook time stamp:  1632430696.9902873
+hook time stamp:  1632430696.9914653
+hook time stamp:  1632430696.9926424
+hook time stamp:  1632430696.9938254
+hook time stamp:  1632430696.9950082
+hook time stamp:  1632430696.9961882
+hook time stamp:  1632430696.9973607
+hook time stamp:  1632430696.998737
+hook time stamp:  1632430697.0014906
+hook time stamp:  1632430697.0028243
+hook time stamp:  1632430697.0037398
+hook time stamp:  1632430697.003902
+resnet152 inference func cost 0.07401704788208008
+Get output 0.08333206176757812
+MainThread resnet152 inference >>>>>>>>>> 1632430701.0905123 model status False
+hook time stamp:  1632430701.0927873
+hook time stamp:  1632430701.0935237
+hook time stamp:  1632430701.0938473
+hook time stamp:  1632430701.0941725
+hook time stamp:  1632430701.0950866
+hook time stamp:  1632430701.097438
+hook time stamp:  1632430701.099584
+hook time stamp:  1632430701.101836
+hook time stamp:  1632430701.1045604
+hook time stamp:  1632430701.1060658
+hook time stamp:  1632430701.1075952
+hook time stamp:  1632430701.1091022
+hook time stamp:  1632430701.110673
+hook time stamp:  1632430701.1121302
+hook time stamp:  1632430701.1136384
+hook time stamp:  1632430701.1152833
+hook time stamp:  1632430701.1177723
+hook time stamp:  1632430701.1189613
+hook time stamp:  1632430701.1201348
+hook time stamp:  1632430701.1213067
+hook time stamp:  1632430701.1225195
+hook time stamp:  1632430701.123674
+hook time stamp:  1632430701.1248512
+hook time stamp:  1632430701.1260138
+hook time stamp:  1632430701.1271894
+hook time stamp:  1632430701.128368
+hook time stamp:  1632430701.1295416
+hook time stamp:  1632430701.1307476
+hook time stamp:  1632430701.1318986
+hook time stamp:  1632430701.1330762
+hook time stamp:  1632430701.1342623
+hook time stamp:  1632430701.1354463
+hook time stamp:  1632430701.1366222
+hook time stamp:  1632430701.137803
+hook time stamp:  1632430701.1389916
+hook time stamp:  1632430701.1401677
+hook time stamp:  1632430701.1413429
+hook time stamp:  1632430701.142543
+hook time stamp:  1632430701.1436985
+hook time stamp:  1632430701.144873
+hook time stamp:  1632430701.14605
+hook time stamp:  1632430701.1472378
+hook time stamp:  1632430701.148409
+hook time stamp:  1632430701.1495852
+hook time stamp:  1632430701.15079
+hook time stamp:  1632430701.151943
+hook time stamp:  1632430701.1530986
+hook time stamp:  1632430701.154287
+hook time stamp:  1632430701.1554658
+hook time stamp:  1632430701.156643
+hook time stamp:  1632430701.1578188
+hook time stamp:  1632430701.15918
+hook time stamp:  1632430701.1619518
+hook time stamp:  1632430701.1632705
+hook time stamp:  1632430701.164209
+hook time stamp:  1632430701.1643713
+resnet152 inference func cost 0.07396101951599121
+Get output 0.08333206176757812
+MainThread resnet152 inference >>>>>>>>>> 1632430705.2645938 model status False
+hook time stamp:  1632430705.2667787
+hook time stamp:  1632430705.2675126
+hook time stamp:  1632430705.2678347
+hook time stamp:  1632430705.2681568
+hook time stamp:  1632430705.2690325
+hook time stamp:  1632430705.2714226
+hook time stamp:  1632430705.2735448
+hook time stamp:  1632430705.2758067
+hook time stamp:  1632430705.2785716
+hook time stamp:  1632430705.2800398
+hook time stamp:  1632430705.2815437
+hook time stamp:  1632430705.2830625
+hook time stamp:  1632430705.2845695
+hook time stamp:  1632430705.286077
+hook time stamp:  1632430705.2875996
+hook time stamp:  1632430705.289242
+hook time stamp:  1632430705.2917292
+hook time stamp:  1632430705.2929053
+hook time stamp:  1632430705.2940884
+hook time stamp:  1632430705.2952647
+hook time stamp:  1632430705.2964442
+hook time stamp:  1632430705.2976217
+hook time stamp:  1632430705.2988265
+hook time stamp:  1632430705.2999766
+hook time stamp:  1632430705.3011544
+hook time stamp:  1632430705.302329
+hook time stamp:  1632430705.3035185
+hook time stamp:  1632430705.3046985
+hook time stamp:  1632430705.3058739
+hook time stamp:  1632430705.3070645
+hook time stamp:  1632430705.3082376
+hook time stamp:  1632430705.3094225
+hook time stamp:  1632430705.3106189
+hook time stamp:  1632430705.3117719
+hook time stamp:  1632430705.3129504
+hook time stamp:  1632430705.314136
+hook time stamp:  1632430705.3153195
+hook time stamp:  1632430705.3164935
+hook time stamp:  1632430705.3176672
+hook time stamp:  1632430705.3188777
+hook time stamp:  1632430705.3200366
+hook time stamp:  1632430705.3212085
+hook time stamp:  1632430705.3223882
+hook time stamp:  1632430705.3235722
+hook time stamp:  1632430705.3247468
+hook time stamp:  1632430705.3259208
+hook time stamp:  1632430705.3271086
+hook time stamp:  1632430705.328287
+hook time stamp:  1632430705.329465
+hook time stamp:  1632430705.3306746
+hook time stamp:  1632430705.3318205
+hook time stamp:  1632430705.3331618
+hook time stamp:  1632430705.335999
+hook time stamp:  1632430705.337344
+hook time stamp:  1632430705.3382847
+hook time stamp:  1632430705.3384438
+resnet152 inference func cost 0.07397246360778809
+Get output 0.08333206176757812
+MainThread resnet152 inference >>>>>>>>>> 1632430709.5747275 model status False
+hook time stamp:  1632430709.5770261
+hook time stamp:  1632430709.5777607
+hook time stamp:  1632430709.5780826
+hook time stamp:  1632430694.8427992
+hook time stamp:  1632430694.8439522
+hook time stamp:  1632430694.8451192
+hook time stamp:  1632430694.8462973
+hook time stamp:  1632430694.8474903
+hook time stamp:  1632430694.848667
+hook time stamp:  1632430694.8498607
+hook time stamp:  1632430694.8510494
+hook time stamp:  1632430694.8522313
+hook time stamp:  1632430694.8534102
+hook time stamp:  1632430694.8546221
+hook time stamp:  1632430694.8557847
+hook time stamp:  1632430694.856963
+hook time stamp:  1632430694.8581448
+hook time stamp:  1632430694.8593323
+hook time stamp:  1632430694.860509
+hook time stamp:  1632430694.8616889
+hook time stamp:  1632430694.862902
+hook time stamp:  1632430694.8640683
+hook time stamp:  1632430694.865238
+hook time stamp:  1632430694.8664253
+hook time stamp:  1632430694.8676248
+hook time stamp:  1632430694.8687966
+hook time stamp:  1632430694.8699796
+hook time stamp:  1632430694.8711739
+hook time stamp:  1632430694.872349
+hook time stamp:  1632430694.8735392
+hook time stamp:  1632430694.8747404
+hook time stamp:  1632430694.8758912
+hook time stamp:  1632430694.8772404
+hook time stamp:  1632430694.8800745
+hook time stamp:  1632430694.8814256
+hook time stamp:  1632430694.8823617
+hook time stamp:  1632430694.8825464
+resnet152 inference func cost 0.07426238059997559
+Get output 0.08333206176757812
+MainThread resnet152 inference >>>>>>>>>> 1632430698.9808161 model status False
+hook time stamp:  1632430698.9831152
+hook time stamp:  1632430698.983855
+hook time stamp:  1632430698.9841795
+hook time stamp:  1632430698.9845028
+hook time stamp:  1632430698.9854138
+hook time stamp:  1632430698.987793
+hook time stamp:  1632430698.9899268
+hook time stamp:  1632430698.9921887
+hook time stamp:  1632430698.9949188
+hook time stamp:  1632430698.9964082
+hook time stamp:  1632430698.9979312
+hook time stamp:  1632430698.999458
+hook time stamp:  1632430699.0009637
+hook time stamp:  1632430699.002519
+hook time stamp:  1632430699.0040207
+hook time stamp:  1632430699.0056584
+hook time stamp:  1632430699.008183
+hook time stamp:  1632430699.009356
+hook time stamp:  1632430699.0105662
+hook time stamp:  1632430699.0117233
+hook time stamp:  1632430699.0129027
+hook time stamp:  1632430699.0140932
+hook time stamp:  1632430699.015432
+hook time stamp:  1632430699.0164702
+hook time stamp:  1632430699.0178287
+hook time stamp:  1632430699.0189016
+hook time stamp:  1632430699.020028
+hook time stamp:  1632430699.0212085
+hook time stamp:  1632430699.0223937
+hook time stamp:  1632430699.02359
+hook time stamp:  1632430699.0247777
+hook time stamp:  1632430699.0259578
+hook time stamp:  1632430699.0271647
+hook time stamp:  1632430699.0283384
+hook time stamp:  1632430699.0295138
+hook time stamp:  1632430699.0307486
+hook time stamp:  1632430699.031885
+hook time stamp:  1632430699.0330458
+hook time stamp:  1632430699.0342348
+hook time stamp:  1632430699.0354304
+hook time stamp:  1632430699.0366037
+hook time stamp:  1632430699.0377917
+hook time stamp:  1632430699.0389974
+hook time stamp:  1632430699.0401778
+hook time stamp:  1632430699.041361
+hook time stamp:  1632430699.0425906
+hook time stamp:  1632430699.0437315
+hook time stamp:  1632430699.0448945
+hook time stamp:  1632430699.0460763
+hook time stamp:  1632430699.0472782
+hook time stamp:  1632430699.0484543
+hook time stamp:  1632430699.0497992
+hook time stamp:  1632430699.0526407
+hook time stamp:  1632430699.0539503
+hook time stamp:  1632430699.0548844
+hook time stamp:  1632430699.0550463
+resnet152 inference func cost 0.07433247566223145
+Get output 0.08333206176757812
+MainThread resnet152 inference >>>>>>>>>> 1632430703.1549041 model status False
+hook time stamp:  1632430703.1571026
+hook time stamp:  1632430703.1578355
+hook time stamp:  1632430703.158158
+hook time stamp:  1632430703.1585073
+hook time stamp:  1632430703.1593983
+hook time stamp:  1632430703.1617606
+hook time stamp:  1632430703.1638849
+hook time stamp:  1632430703.1661472
+hook time stamp:  1632430703.1688795
+hook time stamp:  1632430703.1703863
+hook time stamp:  1632430703.1719046
+hook time stamp:  1632430703.1734188
+hook time stamp:  1632430703.1749825
+hook time stamp:  1632430703.1764944
+hook time stamp:  1632430703.1780007
+hook time stamp:  1632430703.1796672
+hook time stamp:  1632430703.1821637
+hook time stamp:  1632430703.1833544
+hook time stamp:  1632430703.1845338
+hook time stamp:  1632430703.185714
+hook time stamp:  1632430703.1869345
+hook time stamp:  1632430703.1881142
+hook time stamp:  1632430703.1892936
+hook time stamp:  1632430703.190508
+hook time stamp:  1632430703.1916692
+hook time stamp:  1632430703.1928463
+hook time stamp:  1632430703.1940258
+hook time stamp:  1632430703.1952178
+hook time stamp:  1632430703.1963923
+hook time stamp:  1632430703.1975768
+hook time stamp:  1632430703.1987891
+hook time stamp:  1632430703.1999488
+hook time stamp:  1632430703.2011318
+hook time stamp:  1632430703.2023106
+hook time stamp:  1632430703.2035022
+hook time stamp:  1632430703.2046893
+hook time stamp:  1632430703.2058685
+hook time stamp:  1632430703.2070618
+hook time stamp:  1632430703.208242
+hook time stamp:  1632430703.2094233
+hook time stamp:  1632430703.2106338
+hook time stamp:  1632430703.2117908
+hook time stamp:  1632430703.212974
+hook time stamp:  1632430703.214167
+hook time stamp:  1632430703.2153552
+hook time stamp:  1632430703.2165315
+hook time stamp:  1632430703.2177153
+hook time stamp:  1632430703.2189283
+hook time stamp:  1632430703.2201076
+hook time stamp:  1632430703.221291
+hook time stamp:  1632430703.2224712
+hook time stamp:  1632430703.2238288
+hook time stamp:  1632430703.2266855
+hook time stamp:  1632430703.2280126
+hook time stamp:  1632430703.228938
+hook time stamp:  1632430703.2290998
+resnet152 inference func cost 0.07430076599121094
+Get output 0.08333206176757812
+MainThread resnet152 inference >>>>>>>>>> 1632430707.3898814 model status False
+hook time stamp:  1632430707.397213
+hook time stamp:  1632430707.3979487
+hook time stamp:  1632430707.398276
+hook time stamp:  1632430707.398605
+hook time stamp:  1632430707.399526
+hook time stamp:  1632430707.404257
+hook time stamp:  1632430707.4062984
+hook time stamp:  1632430707.4115047
+hook time stamp:  1632430707.418229
+hook time stamp:  1632430707.419226
+hook time stamp:  1632430707.420731
+hook time stamp:  1632430707.4257185
+hook time stamp:  1632430707.4271557
+hook time stamp:  1632430707.4327347
+hook time stamp:  1632430707.4341538
+hook time stamp:  1632430707.4398758
+hook time stamp:  1632430707.4465077
+hook time stamp:  1632430707.4473362
+hook time stamp:  1632430707.4485006
+hook time stamp:  1632430707.4538815
+hook time stamp:  1632430707.4550035
+hook time stamp:  1632430707.4561892
+hook time stamp:  1632430707.4610038
+hook time stamp:  1632430707.4620955
+hook time stamp:  1632430707.4632974
+hook time stamp:  1632430707.46806
+hook time stamp:  1632430707.4691625
+hook time stamp:  1632430707.4703293
+hook time stamp:  1632430707.4752278
+hook time stamp:  1632430707.4763196
+hook time stamp:  1632430707.4774997
+hook time stamp:  1632430707.4824038
+hook time stamp:  1632430707.4835112
+hook time stamp:  1632430707.484697
+hook time stamp:  1632430707.4894943
+hook time stamp:  1632430707.490637
+hook time stamp:  1632430707.4917738
+hook time stamp:  1632430707.4965987
+hook time stamp:  1632430707.4976745
+hook time stamp:  1632430707.498905
+hook time stamp:  1632430707.5040648
+hook time stamp:  1632430707.505151
+hook time stamp:  1632430707.5063367
+hook time stamp:  1632430707.511258
+hook time stamp:  1632430707.5123556
+hook time stamp:  1632430707.5135214
+hook time stamp:  1632430707.5182734
+hook time stamp:  1632430707.5193677
+hook time stamp:  1632430707.5205262
+hook time stamp:  1632430707.5256343
+hook time stamp:  1632430707.526761
+hook time stamp:  1632430707.528093
+hook time stamp:  1632430707.532902
+hook time stamp:  1632430707.5341609
+hook time stamp:  1632430707.5350926
+hook time stamp:  1632430707.5352566
+resnet152 inference func cost 0.1495075225830078
+Get output 0.08333206176757812
+MainThread resnet152 inference >>>>>>>>>> 1632430711.6355681 model status False
+hook time stamp:  1632430711.6378956
+hook time stamp:  1632430711.6387448
+hook time stamp:  1632430711.6390688
+hook time stamp: 
+hook time stamp:  1632430709.5784109
+hook time stamp:  1632430709.5793054
+hook time stamp:  1632430709.5816598
+hook time stamp:  1632430709.5838
+hook time stamp:  1632430709.5860553
+hook time stamp:  1632430709.5887947
+hook time stamp:  1632430709.5902965
+hook time stamp:  1632430709.5918121
+hook time stamp:  1632430709.5933197
+hook time stamp:  1632430709.594854
+hook time stamp:  1632430709.5963407
+hook time stamp:  1632430709.5978532
+hook time stamp:  1632430709.5995002
+hook time stamp:  1632430709.6020193
+hook time stamp:  1632430709.6032052
+hook time stamp:  1632430709.604386
+hook time stamp:  1632430709.6055574
+hook time stamp:  1632430709.6067646
+hook time stamp:  1632430709.6079104
+hook time stamp:  1632430709.6090877
+hook time stamp:  1632430709.610263
+hook time stamp:  1632430709.6114497
+hook time stamp:  1632430709.6126254
+hook time stamp:  1632430709.613806
+hook time stamp:  1632430709.6149712
+hook time stamp:  1632430709.6161532
+hook time stamp:  1632430709.617328
+hook time stamp:  1632430709.6185308
+hook time stamp:  1632430709.6196864
+hook time stamp:  1632430709.6208735
+hook time stamp:  1632430709.622041
+hook time stamp:  1632430709.6232276
+hook time stamp:  1632430709.6244113
+hook time stamp:  1632430709.6255815
+hook time stamp:  1632430709.6267862
+hook time stamp:  1632430709.627937
+hook time stamp:  1632430709.629117
+hook time stamp:  1632430709.6302946
+hook time stamp:  1632430709.6314816
+hook time stamp:  1632430709.632659
+hook time stamp:  1632430709.6338332
+hook time stamp:  1632430709.6350224
+hook time stamp:  1632430709.636202
+hook time stamp:  1632430709.637372
+hook time stamp:  1632430709.638585
+hook time stamp:  1632430709.6397362
+hook time stamp:  1632430709.6409123
+hook time stamp:  1632430709.6420884
+hook time stamp:  1632430709.6434824
+hook time stamp:  1632430709.6462538
+hook time stamp:  1632430709.6476119
+hook time stamp:  1632430709.6485536
+hook time stamp:  1632430709.6487157
+resnet152 inference func cost 0.07409238815307617
+Get output 0.08333206176757812
+MainThread resnet152 inference >>>>>>>>>> 1632430713.7579806 model status False
+hook time stamp:  1632430713.7601693
+hook time stamp:  1632430713.7609053
+hook time stamp:  1632430713.761226
+hook time stamp:  1632430713.7615485
+hook time stamp:  1632430713.762429
+hook time stamp:  1632430713.7648084
+hook time stamp:  1632430713.7669458
+hook time stamp:  1632430713.7692068
+hook time stamp:  1632430713.7719455
+hook time stamp:  1632430713.7734582
+hook time stamp:  1632430713.7749994
+hook time stamp:  1632430713.7765105
+hook time stamp:  1632430713.7780259
+hook time stamp:  1632430713.7795472
+hook time stamp:  1632430713.7810564
+hook time stamp:  1632430713.7827308
+hook time stamp:  1632430713.7852278
+hook time stamp:  1632430713.7864046
+hook time stamp:  1632430713.7875946
+hook time stamp:  1632430713.7887766
+hook time stamp:  1632430713.7899609
+hook time stamp:  1632430713.791158
+hook time stamp:  1632430713.7923377
+hook time stamp:  1632430713.7935228
+hook time stamp:  1632430713.7947326
+hook time stamp:  1632430713.7958903
+hook time stamp:  1632430713.79708
+hook time stamp:  1632430713.7982597
+hook time stamp:  1632430713.7994542
+hook time stamp:  1632430713.8006349
+hook time stamp:  1632430713.801818
+hook time stamp:  1632430713.8030398
+hook time stamp:  1632430713.804217
+hook time stamp:  1632430713.8053782
+hook time stamp:  1632430713.806588
+hook time stamp:  1632430713.8077502
+hook time stamp:  1632430713.8089345
+hook time stamp:  1632430713.8101127
+hook time stamp:  1632430713.8113096
+hook time stamp:  1632430713.8124955
+hook time stamp:  1632430713.8136759
+hook time stamp:  1632430713.8148909
+hook time stamp:  1632430713.8160655
+hook time stamp:  1632430713.8172522
+hook time stamp:  1632430713.8184314
+hook time stamp:  1632430713.8196251
+hook time stamp:  1632430713.8208072
+hook time stamp:  1632430713.8219974
+hook time stamp:  1632430713.8231852
+hook time stamp:  1632430713.824374
+hook time stamp:  1632430713.8255482
+hook time stamp:  1632430713.8269217
+hook time stamp:  1632430713.829701
+hook time stamp:  1632430713.831064
+hook time stamp:  1632430713.83201
+hook time stamp:  1632430713.8321671
+resnet152 inference func cost 0.07427763938903809
+Get output 0.08333206176757812
+MainThread resnet152 inference >>>>>>>>>> 1632430717.919594 model status False
+hook time stamp:  1632430717.921772
+hook time stamp:  1632430717.9225292
+hook time stamp:  1632430717.9228532
+hook time stamp:  1632430717.9231775
+hook time stamp:  1632430717.9240558
+hook time stamp:  1632430717.9264264
+hook time stamp:  1632430717.9285624
+hook time stamp:  1632430717.9308386
+hook time stamp:  1632430717.9335263
+hook time stamp:  1632430717.9350412
+hook time stamp:  1632430717.9365516
+hook time stamp:  1632430717.9380636
+hook time stamp:  1632430717.939577
+hook time stamp:  1632430717.9410453
+hook time stamp:  1632430717.9425807
+hook time stamp:  1632430717.9441938
+hook time stamp:  1632430717.9467368
+hook time stamp:  1632430717.94788
+hook time stamp:  1632430717.949055
+hook time stamp:  1632430717.9502277
+hook time stamp:  1632430717.951415
+hook time stamp:  1632430717.9525928
+hook time stamp:  1632430717.9537652
+hook time stamp:  1632430717.954954
+hook time stamp:  1632430717.9561367
+hook time stamp:  1632430717.9573076
+hook time stamp:  1632430717.9585063
+hook time stamp:  1632430717.959667
+hook time stamp:  1632430717.9608421
+hook time stamp:  1632430717.9620178
+hook time stamp:  1632430717.963206
+hook time stamp:  1632430717.9643857
+hook time stamp:  1632430717.9655552
+hook time stamp:  1632430717.966772
+hook time stamp:  1632430717.9679172
+hook time stamp:  1632430717.9690933
+hook time stamp:  1632430717.9702713
+hook time stamp:  1632430717.9714537
+hook time stamp:  1632430717.9726276
+hook time stamp:  1632430717.9738061
+hook time stamp:  1632430717.9749908
+hook time stamp:  1632430717.976169
+hook time stamp:  1632430717.9773493
+hook time stamp:  1632430717.9785533
+hook time stamp:  1632430717.9797094
+hook time stamp:  1632430717.980888
+hook time stamp:  1632430717.9820642
+hook time stamp:  1632430717.983252
+hook time stamp:  1632430717.9844327
+hook time stamp:  1632430717.9856033
+hook time stamp:  1632430717.9868112
+hook time stamp:  1632430717.9881217
+hook time stamp:  1632430717.9909399
+hook time stamp:  1632430717.9922838
+hook time stamp:  1632430717.9932244
+hook time stamp:  1632430717.9933805
+resnet152 inference func cost 0.07387924194335938
+Get output 0.08333206176757812
+MainThread resnet152 inference >>>>>>>>>> 1632430722.090741 model status False
+hook time stamp:  1632430722.0929127
+hook time stamp:  1632430722.0936477
+hook time stamp:  1632430722.0939686
+hook time stamp:  1632430722.0942988
+hook time stamp:  1632430722.095195
+hook time stamp:  1632430722.0975606
+hook time stamp:  1632430722.0996773
+hook time stamp:  1632430722.101925
+hook time stamp:  1632430722.1046424
+hook time stamp:  1632430722.1061463
+hook time stamp:  1632430722.1076698
+hook time stamp:  1632430722.1091766
+hook time stamp:  1632430722.110715
+hook time stamp:  1632430722.1122015
+hook time stamp:  1632430722.1137128
+hook time stamp:  1632430722.1153603
+hook time stamp:  1632430722.1178627
+hook time stamp:  1632430722.1190462
+hook time stamp:  1632430722.1202238
+hook time stamp:  1632430722.1213963
+hook time stamp:  1632430722.1225996
+hook time stamp:  1632430722.1237502
+hook time stamp:  1632430722.1249301
+hook time stamp:  1632430722.1261046
+hook time stamp:  1632430722.12729
+hook time stamp:  1632430722.1284745
+hook time stamp:  1632430722.1296513
+hook time stamp:  1632430722.13086
+hook time stamp:  1632430722.1320078
+hook time stamp:  1632430722.133188
+hook time stamp:  1632430722.1343672
+hook time stamp:  1632430722.1355593
+hook time stamp:  1632430722.1367283
+hook time stamp:  1632430722.1379104
+hook time stamp:  1632430722.139091
+hook time stamp:  1632430722.1402693
+hook time stamp:  1632430722.141448
+hook time stamp:  1632430722.1426547
+hook time stamp:  1632430722.1438127
+hook time stamp:  1632430722.1449907
+hook time stamp:  1632430722.1461744
+hook time stamp:  1632430722.1473658
+hook time stamp:  1632430722.1485317
+hook time stamp:  1632430722.1497126
+hook time stamp:  1632430722.1509151 1632430711.639395
+hook time stamp:  1632430711.640321
+hook time stamp:  1632430711.6427925
+hook time stamp:  1632430711.6449811
+hook time stamp:  1632430711.647376
+hook time stamp:  1632430711.6503787
+hook time stamp:  1632430711.6520133
+hook time stamp:  1632430711.6536524
+hook time stamp:  1632430711.655347
+hook time stamp:  1632430711.6569762
+hook time stamp:  1632430711.6586354
+hook time stamp:  1632430711.6603284
+hook time stamp:  1632430711.6620946
+hook time stamp:  1632430711.664885
+hook time stamp:  1632430711.6661918
+hook time stamp:  1632430711.667515
+hook time stamp:  1632430711.6688218
+hook time stamp:  1632430711.6701345
+hook time stamp:  1632430711.6714542
+hook time stamp:  1632430711.6727607
+hook time stamp:  1632430711.674068
+hook time stamp:  1632430711.6753778
+hook time stamp:  1632430711.6766708
+hook time stamp:  1632430711.6779778
+hook time stamp:  1632430711.6792948
+hook time stamp:  1632430711.680594
+hook time stamp:  1632430711.681894
+hook time stamp:  1632430711.6832123
+hook time stamp:  1632430711.6845138
+hook time stamp:  1632430711.685809
+hook time stamp:  1632430711.6871243
+hook time stamp:  1632430711.688424
+hook time stamp:  1632430711.6897364
+hook time stamp:  1632430711.6910546
+hook time stamp:  1632430711.6923566
+hook time stamp:  1632430711.69366
+hook time stamp:  1632430711.69498
+hook time stamp:  1632430711.6962783
+hook time stamp:  1632430711.6975877
+hook time stamp:  1632430711.698919
+hook time stamp:  1632430711.7002187
+hook time stamp:  1632430711.7015193
+hook time stamp:  1632430711.7028613
+hook time stamp:  1632430711.704131
+hook time stamp:  1632430711.7054367
+hook time stamp:  1632430711.7067714
+hook time stamp:  1632430711.7080486
+hook time stamp:  1632430711.709352
+hook time stamp:  1632430711.7108514
+hook time stamp:  1632430711.7140672
+hook time stamp:  1632430711.7156074
+hook time stamp:  1632430711.7166958
+hook time stamp:  1632430711.716859
+resnet152 inference func cost 0.08139348030090332
+Get output 0.08333206176757812
+MainThread resnet152 inference >>>>>>>>>> 1632430715.8120458 model status False
+hook time stamp:  1632430715.8142297
+hook time stamp:  1632430715.8149762
+hook time stamp:  1632430715.8152988
+hook time stamp:  1632430715.8156219
+hook time stamp:  1632430715.81653
+hook time stamp:  1632430715.818938
+hook time stamp:  1632430715.8210337
+hook time stamp:  1632430715.8233137
+hook time stamp:  1632430715.826032
+hook time stamp:  1632430715.8275666
+hook time stamp:  1632430715.829087
+hook time stamp:  1632430715.8306339
+hook time stamp:  1632430715.8321218
+hook time stamp:  1632430715.8336513
+hook time stamp:  1632430715.8351827
+hook time stamp:  1632430715.8368318
+hook time stamp:  1632430715.839345
+hook time stamp:  1632430715.8405266
+hook time stamp:  1632430715.8417091
+hook time stamp:  1632430715.842938
+hook time stamp:  1632430715.8441215
+hook time stamp:  1632430715.8453171
+hook time stamp:  1632430715.8465278
+hook time stamp:  1632430715.8476942
+hook time stamp:  1632430715.8488774
+hook time stamp:  1632430715.8500702
+hook time stamp:  1632430715.851268
+hook time stamp:  1632430715.8524516
+hook time stamp:  1632430715.8536468
+hook time stamp:  1632430715.8548665
+hook time stamp:  1632430715.8560271
+hook time stamp:  1632430715.8572156
+hook time stamp:  1632430715.8584006
+hook time stamp:  1632430715.8596032
+hook time stamp:  1632430715.8607845
+hook time stamp:  1632430715.8619795
+hook time stamp:  1632430715.8631718
+hook time stamp:  1632430715.864368
+hook time stamp:  1632430715.8655424
+hook time stamp:  1632430715.8667595
+hook time stamp:  1632430715.8679125
+hook time stamp:  1632430715.8691065
+hook time stamp:  1632430715.8702953
+hook time stamp:  1632430715.8714964
+hook time stamp:  1632430715.8726828
+hook time stamp:  1632430715.8738742
+hook time stamp:  1632430715.87507
+hook time stamp:  1632430715.8762598
+hook time stamp:  1632430715.877451
+hook time stamp:  1632430715.87867
+hook time stamp:  1632430715.8798306
+hook time stamp:  1632430715.8811853
+hook time stamp:  1632430715.8840387
+hook time stamp:  1632430715.8853562
+hook time stamp:  1632430715.8862875
+hook time stamp:  1632430715.886444
+resnet152 inference func cost 0.07451629638671875
+Get output 0.08333206176757812
+MainThread resnet152 inference >>>>>>>>>> 1632430719.9815478 model status False
+hook time stamp:  1632430719.9837706
+hook time stamp:  1632430719.9845057
+hook time stamp:  1632430719.9848292
+hook time stamp:  1632430719.9851542
+hook time stamp:  1632430719.9860613
+hook time stamp:  1632430719.9884453
+hook time stamp:  1632430719.9905963
+hook time stamp:  1632430719.992831
+hook time stamp:  1632430719.9955585
+hook time stamp:  1632430719.9970622
+hook time stamp:  1632430719.9986145
+hook time stamp:  1632430720.0000877
+hook time stamp:  1632430720.0016115
+hook time stamp:  1632430720.003137
+hook time stamp:  1632430720.0046837
+hook time stamp:  1632430720.0063207
+hook time stamp:  1632430720.0088277
+hook time stamp:  1632430720.0100043
+hook time stamp:  1632430720.0112023
+hook time stamp:  1632430720.0123804
+hook time stamp:  1632430720.0135632
+hook time stamp:  1632430720.0148022
+hook time stamp:  1632430720.015933
+hook time stamp:  1632430720.017112
+hook time stamp:  1632430720.0182989
+hook time stamp:  1632430720.0194986
+hook time stamp:  1632430720.0206776
+hook time stamp:  1632430720.021856
+hook time stamp:  1632430720.0230572
+hook time stamp:  1632430720.0242321
+hook time stamp:  1632430720.0254142
+hook time stamp:  1632430720.0266297
+hook time stamp:  1632430720.027781
+hook time stamp:  1632430720.028966
+hook time stamp:  1632430720.030149
+hook time stamp:  1632430720.0313432
+hook time stamp:  1632430720.0325227
+hook time stamp:  1632430720.0337083
+hook time stamp:  1632430720.0349166
+hook time stamp:  1632430720.0360928
+hook time stamp:  1632430720.0372696
+hook time stamp:  1632430720.0384533
+hook time stamp:  1632430720.0396392
+hook time stamp:  1632430720.0408201
+hook time stamp:  1632430720.042005
+hook time stamp:  1632430720.0431955
+hook time stamp:  1632430720.0443764
+hook time stamp:  1632430720.0455532
+hook time stamp:  1632430720.0467668
+hook time stamp:  1632430720.0479183
+hook time stamp:  1632430720.049099
+hook time stamp:  1632430720.050447
+hook time stamp:  1632430720.0531535
+hook time stamp:  1632430720.0544715
+hook time stamp:  1632430720.0553856
+hook time stamp:  1632430720.055544
+resnet152 inference func cost 0.0740962028503418
+Get output 0.08333206176757812
+MainThread resnet152 inference >>>>>>>>>> 1632430724.1512678 model status False
+hook time stamp:  1632430724.153446
+hook time stamp:  1632430724.1541789
+hook time stamp:  1632430724.1545298
+hook time stamp:  1632430724.1548533
+hook time stamp:  1632430724.1557693
+hook time stamp:  1632430724.158128
+hook time stamp:  1632430724.16025
+hook time stamp:  1632430724.1625388
+hook time stamp:  1632430724.1652372
+hook time stamp:  1632430724.1667817
+hook time stamp:  1632430724.1682727
+hook time stamp:  1632430724.1697898
+hook time stamp:  1632430724.1713116
+hook time stamp:  1632430724.1728296
+hook time stamp:  1632430724.174346
+hook time stamp:  1632430724.1759913
+hook time stamp:  1632430724.178518
+hook time stamp:  1632430724.1796837
+hook time stamp:  1632430724.1808612
+hook time stamp:  1632430724.1820445
+hook time stamp:  1632430724.1832376
+hook time stamp:  1632430724.1844227
+hook time stamp:  1632430724.1856043
+hook time stamp:  1632430724.1868188
+hook time stamp:  1632430724.1879692
+hook time stamp:  1632430724.1891506
+hook time stamp:  1632430724.190329
+hook time stamp:  1632430724.191526
+hook time stamp:  1632430724.1927025
+hook time stamp:  1632430724.1938853
+hook time stamp:  1632430724.1950796
+hook time stamp:  1632430724.1962552
+hook time stamp:  1632430724.197439
+hook time stamp:  1632430724.1986582
+hook time stamp:  1632430724.1998112
+hook time stamp:  1632430724.2009895
+hook time stamp:  1632430724.2021694
+hook time stamp:  1632430724.2033582
+hook time stamp:  1632430724.204548
+hook time stamp:  1632430724.2057204
+hook time stamp:  1632430724.2069666
+hook time stamp:  1632430724.2081203
+hook time stamp:  1632430724.2092988
+hook time stamp:  1632430724.2105021
+hook time stamp:  1632430724.2116523
+hook time stamp: 
+hook time stamp:  1632430722.1521077
+hook time stamp:  1632430722.1532824
+hook time stamp:  1632430722.1544926
+hook time stamp:  1632430722.1556466
+hook time stamp:  1632430722.1568205
+hook time stamp:  1632430722.1579971
+hook time stamp:  1632430722.1593235
+hook time stamp:  1632430722.1621604
+hook time stamp:  1632430722.1634765
+hook time stamp:  1632430722.1644146
+hook time stamp:  1632430722.164574
+resnet152 inference func cost 0.07393670082092285
+Get output 0.08333206176757812
+MainThread resnet152 inference >>>>>>>>>> 1632430726.2591388 model status False
+hook time stamp:  1632430726.2613363
+hook time stamp:  1632430726.2620711
+hook time stamp:  1632430726.2623916
+hook time stamp:  1632430726.2627246
+hook time stamp:  1632430726.2636046
+hook time stamp:  1632430726.2659771
+hook time stamp:  1632430726.2680995
+hook time stamp:  1632430726.2703383
+hook time stamp:  1632430726.273047
+hook time stamp:  1632430726.2745807
+hook time stamp:  1632430726.276066
+hook time stamp:  1632430726.277577
+hook time stamp:  1632430726.279088
+hook time stamp:  1632430726.2805994
+hook time stamp:  1632430726.282115
+hook time stamp:  1632430726.2837615
+hook time stamp:  1632430726.2861998
+hook time stamp:  1632430726.2873907
+hook time stamp:  1632430726.2885673
+hook time stamp:  1632430726.2897453
+hook time stamp:  1632430726.2909517
+hook time stamp:  1632430726.2921247
+hook time stamp:  1632430726.2933056
+hook time stamp:  1632430726.2945068
+hook time stamp:  1632430726.2956614
+hook time stamp:  1632430726.2968364
+hook time stamp:  1632430726.2980156
+hook time stamp:  1632430726.2991977
+hook time stamp:  1632430726.3003716
+hook time stamp:  1632430726.3015478
+hook time stamp:  1632430726.3027568
+hook time stamp:  1632430726.3039055
+hook time stamp:  1632430726.305084
+hook time stamp:  1632430726.3062623
+hook time stamp:  1632430726.3074472
+hook time stamp:  1632430726.308623
+hook time stamp:  1632430726.3098016
+hook time stamp:  1632430726.3109913
+hook time stamp:  1632430726.312169
+hook time stamp:  1632430726.3133469
+hook time stamp:  1632430726.314538
+hook time stamp:  1632430726.315684
+hook time stamp:  1632430726.3168645
+hook time stamp:  1632430726.3180208
+hook time stamp:  1632430726.3191826
+hook time stamp:  1632430726.3203616
+hook time stamp:  1632430726.3215358
+hook time stamp:  1632430726.3227396
+hook time stamp:  1632430726.3238897
+hook time stamp:  1632430726.3250487
+hook time stamp:  1632430726.32622
+hook time stamp:  1632430726.327567
+hook time stamp:  1632430726.3303993
+hook time stamp:  1632430726.3317184
+hook time stamp:  1632430726.3326907
+hook time stamp:  1632430726.332848
+resnet152 inference func cost 0.07380104064941406
+Get output 0.08333206176757812
+MainThread resnet152 inference >>>>>>>>>> 1632430730.4381986 model status False
+hook time stamp:  1632430730.4403906
+hook time stamp:  1632430730.441125
+hook time stamp:  1632430730.4414463
+hook time stamp:  1632430730.4417694
+hook time stamp:  1632430730.4426785
+hook time stamp:  1632430730.4450197
+hook time stamp:  1632430730.447151
+hook time stamp:  1632430730.4493816
+hook time stamp:  1632430730.4521275
+hook time stamp:  1632430730.4536202
+hook time stamp:  1632430730.4551463
+hook time stamp:  1632430730.456651
+hook time stamp:  1632430730.4581552
+hook time stamp:  1632430730.4596758
+hook time stamp:  1632430730.46118
+hook time stamp:  1632430730.462848
+hook time stamp:  1632430730.4653094
+hook time stamp:  1632430730.4665048
+hook time stamp:  1632430730.4676683
+hook time stamp:  1632430730.4688447
+hook time stamp:  1632430730.4700208
+hook time stamp:  1632430730.4712067
+hook time stamp:  1632430730.4723768
+hook time stamp:  1632430730.4735591
+hook time stamp:  1632430730.4747643
+hook time stamp:  1632430730.4759147
+hook time stamp:  1632430730.4770722
+hook time stamp:  1632430730.4782536
+hook time stamp:  1632430730.4794393
+hook time stamp:  1632430730.4806135
+hook time stamp:  1632430730.4817913
+hook time stamp:  1632430730.4829783
+hook time stamp:  1632430730.4841459
+hook time stamp:  1632430730.48533
+hook time stamp:  1632430730.4865386
+hook time stamp:  1632430730.4876935
+hook time stamp:  1632430730.4888666
+hook time stamp:  1632430730.490045
+hook time stamp:  1632430730.4912333
+hook time stamp:  1632430730.4924076
+hook time stamp:  1632430730.4935682
+hook time stamp:  1632430730.494781
+hook time stamp:  1632430730.4959207
+hook time stamp:  1632430730.4971006
+hook time stamp:  1632430730.4982738
+hook time stamp:  1632430730.4994605
+hook time stamp:  1632430730.5006318
+hook time stamp:  1632430730.501809
+hook time stamp:  1632430730.5029955
+hook time stamp:  1632430730.5041723
+hook time stamp:  1632430730.5053575
+hook time stamp:  1632430730.5067177
+hook time stamp:  1632430730.509512
+hook time stamp:  1632430730.510891
+hook time stamp:  1632430730.5118036
+hook time stamp:  1632430730.5119615
+resnet152 inference func cost 0.07386374473571777
+Get output 0.08333206176757812
+MainThread resnet152 inference >>>>>>>>>> 1632430734.6096315 model status False
+hook time stamp:  1632430734.6118643
+hook time stamp:  1632430734.612602
+hook time stamp:  1632430734.612923
+hook time stamp:  1632430734.6132457
+hook time stamp:  1632430734.6141276
+hook time stamp:  1632430734.6165001
+hook time stamp:  1632430734.618654
+hook time stamp:  1632430734.6208754
+hook time stamp:  1632430734.6235945
+hook time stamp:  1632430734.6250947
+hook time stamp:  1632430734.6266384
+hook time stamp:  1632430734.6281219
+hook time stamp:  1632430734.6296353
+hook time stamp:  1632430734.6311502
+hook time stamp:  1632430734.6326509
+hook time stamp:  1632430734.6342924
+hook time stamp:  1632430734.6367948
+hook time stamp:  1632430734.6379628
+hook time stamp:  1632430734.6391525
+hook time stamp:  1632430734.6403272
+hook time stamp:  1632430734.6415055
+hook time stamp:  1632430734.642714
+hook time stamp:  1632430734.6438627
+hook time stamp:  1632430734.645052
+hook time stamp:  1632430734.646223
+hook time stamp:  1632430734.647417
+hook time stamp:  1632430734.6485872
+hook time stamp:  1632430734.6497672
+hook time stamp:  1632430734.6509695
+hook time stamp:  1632430734.6521437
+hook time stamp:  1632430734.6533165
+hook time stamp:  1632430734.6545196
+hook time stamp:  1632430734.6556764
+hook time stamp:  1632430734.656851
+hook time stamp:  1632430734.6580274
+hook time stamp:  1632430734.6592128
+hook time stamp:  1632430734.6603842
+hook time stamp:  1632430734.6615586
+hook time stamp:  1632430734.662766
+hook time stamp:  1632430734.6639156
+hook time stamp:  1632430734.6650965
+hook time stamp:  1632430734.6662729
+hook time stamp:  1632430734.667459
+hook time stamp:  1632430734.668635
+hook time stamp:  1632430734.6698112
+hook time stamp:  1632430734.6709988
+hook time stamp:  1632430734.6721776
+hook time stamp:  1632430734.6733568
+hook time stamp:  1632430734.6745658
+hook time stamp:  1632430734.675717
+hook time stamp:  1632430734.676874
+hook time stamp:  1632430734.67822
+hook time stamp:  1632430734.6810656
+hook time stamp:  1632430734.682379
+hook time stamp:  1632430734.6833267
+hook time stamp:  1632430734.6834867
+resnet152 inference func cost 0.07395148277282715
+Get output 0.08333206176757812
+MainThread resnet152 inference >>>>>>>>>> 1632430738.7707922 model status False
+hook time stamp:  1632430738.7729793
+hook time stamp:  1632430738.7737138
+hook time stamp:  1632430738.7740362
+hook time stamp:  1632430738.7743587
+hook time stamp:  1632430738.7752552
+hook time stamp:  1632430738.7776074
+hook time stamp:  1632430738.7797437
+hook time stamp:  1632430738.7819893
+hook time stamp:  1632430738.7847133
+hook time stamp:  1632430738.7862182
+hook time stamp:  1632430738.7877412
+hook time stamp:  1632430738.7892504
+hook time stamp:  1632430738.790745
+hook time stamp:  1632430738.7922275
+hook time stamp:  1632430738.7937427
+hook time stamp:  1632430738.7953916
+hook time stamp:  1632430738.7979035
+hook time stamp:  1632430738.799092
+hook time stamp:  1632430738.8002608
+hook time stamp:  1632430738.8014364
+hook time stamp:  1632430738.8026505
+hook time stamp:  1632430738.803797
+hook time stamp:  1632430738.8049817
+hook time stamp:  1632430738.806133
+hook time stamp:  1632430738.8073006
+hook time stamp:  1632430738.8084762
+hook time stamp:  1632430724.2128344
+hook time stamp:  1632430724.2140183
+hook time stamp:  1632430724.2152052
+hook time stamp:  1632430724.2163801
+hook time stamp:  1632430724.2175632
+hook time stamp:  1632430724.2187788
+hook time stamp:  1632430724.2200906
+hook time stamp:  1632430724.2229419
+hook time stamp:  1632430724.2242842
+hook time stamp:  1632430724.2252166
+hook time stamp:  1632430724.2253745
+resnet152 inference func cost 0.07420802116394043
+Get output 0.08333206176757812
+MainThread resnet152 inference >>>>>>>>>> 1632430728.3209977 model status False
+hook time stamp:  1632430728.3233263
+hook time stamp:  1632430728.3240607
+hook time stamp:  1632430728.3243904
+hook time stamp:  1632430728.3247168
+hook time stamp:  1632430728.3256466
+hook time stamp:  1632430728.3280056
+hook time stamp:  1632430728.330118
+hook time stamp:  1632430728.3323934
+hook time stamp:  1632430728.3351028
+hook time stamp:  1632430728.336609
+hook time stamp:  1632430728.3381429
+hook time stamp:  1632430728.339668
+hook time stamp:  1632430728.3411756
+hook time stamp:  1632430728.3427286
+hook time stamp:  1632430728.3442118
+hook time stamp:  1632430728.3458526
+hook time stamp:  1632430728.348349
+hook time stamp:  1632430728.3495288
+hook time stamp:  1632430728.3507476
+hook time stamp:  1632430728.3518918
+hook time stamp:  1632430728.3530746
+hook time stamp:  1632430728.3542578
+hook time stamp:  1632430728.3554528
+hook time stamp:  1632430728.3566308
+hook time stamp:  1632430728.3578079
+hook time stamp:  1632430728.359002
+hook time stamp:  1632430728.3601816
+hook time stamp:  1632430728.3613627
+hook time stamp:  1632430728.3625717
+hook time stamp:  1632430728.3637295
+hook time stamp:  1632430728.36492
+hook time stamp:  1632430728.3660984
+hook time stamp:  1632430728.3672884
+hook time stamp:  1632430728.3684728
+hook time stamp:  1632430728.369655
+hook time stamp:  1632430728.3708704
+hook time stamp:  1632430728.3720193
+hook time stamp:  1632430728.373202
+hook time stamp:  1632430728.3743732
+hook time stamp:  1632430728.3755596
+hook time stamp:  1632430728.3767385
+hook time stamp:  1632430728.3779233
+hook time stamp:  1632430728.3791134
+hook time stamp:  1632430728.3802934
+hook time stamp:  1632430728.381479
+hook time stamp:  1632430728.3826866
+hook time stamp:  1632430728.3838415
+hook time stamp:  1632430728.385027
+hook time stamp:  1632430728.3862066
+hook time stamp:  1632430728.3873963
+hook time stamp:  1632430728.3885756
+hook time stamp:  1632430728.3899238
+hook time stamp:  1632430728.3927577
+hook time stamp:  1632430728.3940697
+hook time stamp:  1632430728.3950002
+hook time stamp:  1632430728.3951635
+resnet152 inference func cost 0.07426929473876953
+Get output 0.08333206176757812
+MainThread resnet152 inference >>>>>>>>>> 1632430732.4907582 model status False
+hook time stamp:  1632430732.492958
+hook time stamp:  1632430732.493694
+hook time stamp:  1632430732.494018
+hook time stamp:  1632430732.4943435
+hook time stamp:  1632430732.495262
+hook time stamp:  1632430732.4976165
+hook time stamp:  1632430732.499763
+hook time stamp:  1632430732.5020225
+hook time stamp:  1632430732.5047488
+hook time stamp:  1632430732.5062351
+hook time stamp:  1632430732.5077715
+hook time stamp:  1632430732.509279
+hook time stamp:  1632430732.5108483
+hook time stamp:  1632430732.5123081
+hook time stamp:  1632430732.5138319
+hook time stamp:  1632430732.5154848
+hook time stamp:  1632430732.517979
+hook time stamp:  1632430732.5191731
+hook time stamp:  1632430732.520352
+hook time stamp:  1632430732.5215352
+hook time stamp:  1632430732.5227432
+hook time stamp:  1632430732.5238981
+hook time stamp:  1632430732.5250878
+hook time stamp:  1632430732.5262666
+hook time stamp:  1632430732.527457
+hook time stamp:  1632430732.528633
+hook time stamp:  1632430732.5298193
+hook time stamp:  1632430732.531008
+hook time stamp:  1632430732.532187
+hook time stamp:  1632430732.5333676
+hook time stamp:  1632430732.5345838
+hook time stamp:  1632430732.5357313
+hook time stamp:  1632430732.5369139
+hook time stamp:  1632430732.538102
+hook time stamp:  1632430732.5392923
+hook time stamp:  1632430732.5404675
+hook time stamp:  1632430732.5416474
+hook time stamp:  1632430732.5428603
+hook time stamp:  1632430732.544014
+hook time stamp:  1632430732.5452006
+hook time stamp:  1632430732.5463824
+hook time stamp:  1632430732.5475729
+hook time stamp:  1632430732.5487504
+hook time stamp:  1632430732.5499346
+hook time stamp:  1632430732.551125
+hook time stamp:  1632430732.5523021
+hook time stamp:  1632430732.5534842
+hook time stamp:  1632430732.554711
+hook time stamp:  1632430732.5558505
+hook time stamp:  1632430732.5570297
+hook time stamp:  1632430732.5582113
+hook time stamp:  1632430732.5595698
+hook time stamp:  1632430732.5623882
+hook time stamp:  1632430732.5637093
+hook time stamp:  1632430732.564634
+hook time stamp:  1632430732.5647905
+resnet152 inference func cost 0.07413077354431152
+Get output 0.08333206176757812
+MainThread resnet152 inference >>>>>>>>>> 1632430736.6615448 model status False
+hook time stamp:  1632430736.6637502
+hook time stamp:  1632430736.6644926
+hook time stamp:  1632430736.6648152
+hook time stamp:  1632430736.6651394
+hook time stamp:  1632430736.666049
+hook time stamp:  1632430736.6684265
+hook time stamp:  1632430736.6705766
+hook time stamp:  1632430736.6728199
+hook time stamp:  1632430736.6755297
+hook time stamp:  1632430736.6770298
+hook time stamp:  1632430736.6785815
+hook time stamp:  1632430736.6800654
+hook time stamp:  1632430736.6815786
+hook time stamp:  1632430736.6831021
+hook time stamp:  1632430736.6846204
+hook time stamp:  1632430736.6862593
+hook time stamp:  1632430736.6887593
+hook time stamp:  1632430736.689937
+hook time stamp:  1632430736.691132
+hook time stamp:  1632430736.6923137
+hook time stamp:  1632430736.693496
+hook time stamp:  1632430736.6946933
+hook time stamp:  1632430736.6958246
+hook time stamp:  1632430736.6970074
+hook time stamp:  1632430736.6981933
+hook time stamp:  1632430736.699391
+hook time stamp:  1632430736.7005599
+hook time stamp:  1632430736.7017493
+hook time stamp:  1632430736.7029643
+hook time stamp:  1632430736.7041447
+hook time stamp:  1632430736.7053246
+hook time stamp:  1632430736.7065327
+hook time stamp:  1632430736.707697
+hook time stamp:  1632430736.708861
+hook time stamp:  1632430736.7100468
+hook time stamp:  1632430736.7112405
+hook time stamp:  1632430736.7124205
+hook time stamp:  1632430736.7135992
+hook time stamp:  1632430736.7148159
+hook time stamp:  1632430736.715961
+hook time stamp:  1632430736.7171404
+hook time stamp:  1632430736.718323
+hook time stamp:  1632430736.7195156
+hook time stamp:  1632430736.7206776
+hook time stamp:  1632430736.7218654
+hook time stamp:  1632430736.7230546
+hook time stamp:  1632430736.7242346
+hook time stamp:  1632430736.7254202
+hook time stamp:  1632430736.7266388
+hook time stamp:  1632430736.727788
+hook time stamp:  1632430736.7289732
+hook time stamp:  1632430736.7303243
+hook time stamp:  1632430736.7331195
+hook time stamp:  1632430736.7344244
+hook time stamp:  1632430736.735357
+hook time stamp:  1632430736.735513
+resnet152 inference func cost 0.07406902313232422
+Get output 0.08333206176757812
+MainThread resnet152 inference >>>>>>>>>> 1632430740.831381 model status False
+hook time stamp:  1632430740.8335664
+hook time stamp:  1632430740.8342988
+hook time stamp:  1632430740.8346293
+hook time stamp:  1632430740.834954
+hook time stamp:  1632430740.8358662
+hook time stamp:  1632430740.8382277
+hook time stamp:  1632430740.840375
+hook time stamp:  1632430740.842666
+hook time stamp:  1632430740.8453403
+hook time stamp:  1632430740.8468764
+hook time stamp:  1632430740.8483336
+hook time stamp:  1632430740.8498347
+hook time stamp:  1632430740.8513727
+hook time stamp:  1632430740.8528795
+hook time stamp:  1632430740.854392
+hook time stamp:  1632430740.8560584
+hook time stamp:  1632430740.8585546
+hook time stamp:  1632430740.8597157
+hook time stamp:  1632430740.8608973
+hook time stamp:  1632430740.8620765
+hook time stamp:  1632430740.8632684
+hook time stamp:  1632430740.864448
+hook time stamp:  1632430740.8656332
+hook time stamp:  1632430740.8668466
+hook time stamp:  1632430740.8680053
+hook time stamp:  1632430740.8691888
+hook time stamp:  1632430740.8703685Using cache found in /home/ubuntu/.cache/torch/hub/pytorch_vision_v0.4.2
+ 1632430738.8096557
+hook time stamp:  1632430738.8108788
+hook time stamp:  1632430738.8120224
+hook time stamp:  1632430738.813202
+hook time stamp:  1632430738.8143814
+hook time stamp:  1632430738.8155649
+hook time stamp:  1632430738.816738
+hook time stamp:  1632430738.817919
+hook time stamp:  1632430738.8191075
+hook time stamp:  1632430738.8202844
+hook time stamp:  1632430738.821464
+hook time stamp:  1632430738.8226707
+hook time stamp:  1632430738.8238044
+hook time stamp:  1632430738.8249898
+hook time stamp:  1632430738.8261685
+hook time stamp:  1632430738.8273556
+hook time stamp:  1632430738.8285336
+hook time stamp:  1632430738.8297076
+hook time stamp:  1632430738.8309133
+hook time stamp:  1632430738.8320875
+hook time stamp:  1632430738.8332648
+hook time stamp:  1632430738.8344445
+hook time stamp:  1632430738.8356266
+hook time stamp:  1632430738.836804
+hook time stamp:  1632430738.837975
+hook time stamp:  1632430738.839333
+hook time stamp:  1632430738.8421133
+hook time stamp:  1632430738.8434327
+hook time stamp:  1632430738.8443668
+hook time stamp:  1632430738.8445294
+resnet152 inference func cost 0.0738382339477539
+Get output 0.08333206176757812
+MainThread resnet152 inference >>>>>>>>>> 1632430742.9405718 model status False
+hook time stamp:  1632430742.9427757
+hook time stamp:  1632430742.943508
+hook time stamp:  1632430742.9438298
+hook time stamp:  1632430742.9441528
+hook time stamp:  1632430742.9450357
+hook time stamp:  1632430742.9474056
+hook time stamp:  1632430742.949522
+hook time stamp:  1632430742.9518013
+hook time stamp:  1632430742.954553
+hook time stamp:  1632430742.9560368
+hook time stamp:  1632430742.9575434
+hook time stamp:  1632430742.9590647
+hook time stamp:  1632430742.9605649
+hook time stamp:  1632430742.9620733
+hook time stamp:  1632430742.9635925
+hook time stamp:  1632430742.9652283
+hook time stamp:  1632430742.967735
+hook time stamp:  1632430742.9689112
+hook time stamp:  1632430742.9700904
+hook time stamp:  1632430742.9712737
+hook time stamp:  1632430742.972452
+hook time stamp:  1632430742.9736297
+hook time stamp:  1632430742.9748423
+hook time stamp:  1632430742.9759903
+hook time stamp:  1632430742.977171
+hook time stamp:  1632430742.9783506
+hook time stamp:  1632430742.979535
+hook time stamp:  1632430742.9806921
+hook time stamp:  1632430742.9818692
+hook time stamp:  1632430742.9830587
+hook time stamp:  1632430742.9842331
+hook time stamp:  1632430742.9854264
+hook time stamp:  1632430742.9866185
+hook time stamp:  1632430742.987769
+hook time stamp:  1632430742.9889503
+hook time stamp:  1632430742.9901257
+hook time stamp:  1632430742.991312
+hook time stamp:  1632430742.992485
+hook time stamp:  1632430742.9936628
+hook time stamp:  1632430742.994874
+hook time stamp:  1632430742.996017
+hook time stamp:  1632430742.9971957
+hook time stamp:  1632430742.9983706
+hook time stamp:  1632430742.9995596
+hook time stamp:  1632430743.0007327
+hook time stamp:  1632430743.0018916
+hook time stamp:  1632430743.003079
+hook time stamp:  1632430743.0042512
+hook time stamp:  1632430743.0054305
+hook time stamp:  1632430743.0066388
+hook time stamp:  1632430743.0077872
+hook time stamp:  1632430743.0091279
+hook time stamp:  1632430743.0119627
+hook time stamp:  1632430743.0132654
+hook time stamp:  1632430743.0142071
+hook time stamp:  1632430743.0143673
+resnet152 inference func cost 0.0739130973815918
+Get output 0.08333206176757812
+
+hook time stamp:  1632430740.8715818
+hook time stamp:  1632430740.8727577
+hook time stamp:  1632430740.873938
+hook time stamp:  1632430740.8751311
+hook time stamp:  1632430740.876311
+hook time stamp:  1632430740.8774939
+hook time stamp:  1632430740.8787136
+hook time stamp:  1632430740.8798685
+hook time stamp:  1632430740.8810477
+hook time stamp:  1632430740.882231
+hook time stamp:  1632430740.8834257
+hook time stamp:  1632430740.8846083
+hook time stamp:  1632430740.8857896
+hook time stamp:  1632430740.8869781
+hook time stamp:  1632430740.8881612
+hook time stamp:  1632430740.8893456
+hook time stamp:  1632430740.8905528
+hook time stamp:  1632430740.8917108
+hook time stamp:  1632430740.8928967
+hook time stamp:  1632430740.8940756
+hook time stamp:  1632430740.8952682
+hook time stamp:  1632430740.8964474
+hook time stamp:  1632430740.89763
+hook time stamp:  1632430740.898837
+hook time stamp:  1632430740.900154
+hook time stamp:  1632430740.90297
+hook time stamp:  1632430740.9043167
+hook time stamp:  1632430740.9052396
+hook time stamp:  1632430740.9053974
+resnet152 inference func cost 0.07411646842956543
+Get output 0.08333206176757812
+MainThread resnet152 inference >>>>>>>>>> 1632430745.0004933 model status False
+hook time stamp:  1632430745.0027225
+hook time stamp:  1632430745.0034533
+hook time stamp:  1632430745.0037735
+hook time stamp:  1632430745.0040963
+hook time stamp:  1632430745.0050125
+hook time stamp:  1632430745.0073702
+hook time stamp:  1632430745.0094936
+hook time stamp:  1632430745.0117598
+hook time stamp:  1632430745.0144587
+hook time stamp:  1632430745.0159872
+hook time stamp:  1632430745.0174942
+hook time stamp:  1632430745.0190253
+hook time stamp:  1632430745.0205343
+hook time stamp:  1632430745.0220518
+hook time stamp:  1632430745.0235813
+hook time stamp:  1632430745.0252233
+hook time stamp:  1632430745.027729
+hook time stamp:  1632430745.0289075
+hook time stamp:  1632430745.0300906
+hook time stamp:  1632430745.031289
+hook time stamp:  1632430745.0324614
+hook time stamp:  1632430745.033648
+hook time stamp:  1632430745.034862
+hook time stamp:  1632430745.0360074
+hook time stamp:  1632430745.0371888
+hook time stamp:  1632430745.038367
+hook time stamp:  1632430745.0395577
+hook time stamp:  1632430745.0407326
+hook time stamp:  1632430745.0419154
+hook time stamp:  1632430745.0431056
+hook time stamp:  1632430745.044281
+hook time stamp:  1632430745.0454721
+hook time stamp:  1632430745.0466752
+hook time stamp:  1632430745.047839
+hook time stamp:  1632430745.049014
+hook time stamp:  1632430745.0502005
+hook time stamp:  1632430745.0513911
+hook time stamp:  1632430745.0525708
+hook time stamp:  1632430745.0537534
+hook time stamp:  1632430745.0549712
+hook time stamp:  1632430745.0561452
+hook time stamp:  1632430745.0573256
+hook time stamp:  1632430745.0585341
+hook time stamp:  1632430745.0596933
+hook time stamp:  1632430745.0608706
+hook time stamp:  1632430745.06205
+hook time stamp:  1632430745.0632384
+hook time stamp:  1632430745.0644157
+hook time stamp:  1632430745.0656009
+hook time stamp:  1632430745.0668154
+hook time stamp:  1632430745.0679662
+hook time stamp:  1632430745.0693145
+hook time stamp:  1632430745.0721085
+hook time stamp:  1632430745.0734172
+hook time stamp:  1632430745.0743406
+hook time stamp:  1632430745.074524
+resnet152 inference func cost 0.07413864135742188
+Get output 0.08333206176757812
+Using cache found in /home/ubuntu/.cache/torch/hub/pytorch_vision_v0.4.2
+Process WorkerProc_orig-2:
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/envs/gpu/lib/python3.6/multiprocessing/process.py", line 258, in _bootstrap
+    self.run()
+  File "/home/ubuntu/PipeSwitch/pipeswitch/worker_orig.py", line 53, in run
+    agent, model_name = self.pipe.recv()
+  File "/home/ubuntu/anaconda3/envs/gpu/lib/python3.6/multiprocessing/connection.py", line 250, in recv
+    buf = self._recv_bytes()
+  File "/home/ubuntu/anaconda3/envs/gpu/lib/python3.6/multiprocessing/connection.py", line 407, in _recv_bytes
+    buf = self._recv(4)
+  File "/home/ubuntu/anaconda3/envs/gpu/lib/python3.6/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+KeyboardInterrupt
+Using cache found in /home/ubuntu/.cache/torch/hub/pytorch_vision_v0.4.2
+Process WorkerProc_orig-1:
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/envs/gpu/lib/python3.6/multiprocessing/process.py", line 258, in _bootstrap
+    self.run()
+  File "/home/ubuntu/PipeSwitch/pipeswitch/worker_orig.py", line 53, in run
+    agent, model_name = self.pipe.recv()
+  File "/home/ubuntu/anaconda3/envs/gpu/lib/python3.6/multiprocessing/connection.py", line 250, in recv
+    buf = self._recv_bytes()
+  File "/home/ubuntu/anaconda3/envs/gpu/lib/python3.6/multiprocessing/connection.py", line 407, in _recv_bytes
+    buf = self._recv(4)
+  File "/home/ubuntu/anaconda3/envs/gpu/lib/python3.6/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+KeyboardInterrupt
+Exception ignored in: <module 'threading' from '/home/ubuntu/anaconda3/envs/gpu/lib/python3.6/threading.py'>
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/envs/gpu/lib/python3.6/threading.py", line 1294, in _shutdown
+    t.join()
+  File "/home/ubuntu/anaconda3/envs/gpu/lib/python3.6/threading.py", line 1056, in join
+    self._wait_for_tstate_lock()
+  File "/home/ubuntu/anaconda3/envs/gpu/lib/python3.6/threading.py", line 1072, in _wait_for_tstate_lock
+    elif lock.acquire(block, timeout):
+KeyboardInterrupt
+Exception ignored in: <module 'threading' from '/home/ubuntu/anaconda3/envs/gpu/lib/python3.6/threading.py'>
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/envs/gpu/lib/python3.6/threading.py", line 1294, in _shutdown
+    t.join()
+  File "/home/ubuntu/anaconda3/envs/gpu/lib/python3.6/threading.py", line 1056, in join
+    self._wait_for_tstate_lock()
+  File "/home/ubuntu/anaconda3/envs/gpu/lib/python3.6/threading.py", line 1072, in _wait_for_tstate_lock
+    elif lock.acquire(block, timeout):
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "main.py", line 67, in <module>
+    main()
+  File "main.py", line 56, in main
+    conn, _ = server.accept()
+  File "/home/ubuntu/PipeSwitch/util/util.py", line 22, in accept
+    conn, address = self.sock.accept()
+  File "/home/ubuntu/anaconda3/envs/gpu/lib/python3.6/socket.py", line 205, in accept
+    fd, addr = self._accept()
+KeyboardInterrupt
+Exception ignored in: <module 'threading' from '/home/ubuntu/anaconda3/envs/gpu/lib/python3.6/threading.py'>
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/envs/gpu/lib/python3.6/threading.py", line 1294, in _shutdown
+    t.join()
+  File "/home/ubuntu/anaconda3/envs/gpu/lib/python3.6/threading.py", line 1056, in join
+    self._wait_for_tstate_lock()
+  File "/home/ubuntu/anaconda3/envs/gpu/lib/python3.6/threading.py", line 1072, in _wait_for_tstate_lock
+    elif lock.acquire(block, timeout):
+KeyboardInterrupt
+Error in atexit._run_exitfuncs:
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/envs/gpu/lib/python3.6/multiprocessing/popen_fork.py", line 28, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+KeyboardInterrupt
