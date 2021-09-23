@@ -79,7 +79,7 @@ class ModelSummary():
         """ """
         def hook_terminate(mod, input, output):
             #print("Call hook 1", flush=True)
-            print("hook time stamp: ", time.time())
+            #print("hook time stamp: ", time.time())
             torch.cuda.synchronize()
             #print("Call hook 2", flush=True)
             #print("Call hook 3", flush=True)
@@ -111,7 +111,7 @@ class ModelSummary():
         #    self.insert_terminate_hook(self.model)
         #self.insert_terminate_hook(self.model)
         #self.insert_less_terminate_hook(self.model)
-        self.insert_custom_terminate_hook(self.model, 4, 0)
+        self.insert_custom_terminate_hook(self.model, 1, 0)
         print("Number of hooks inserted is: ", self.hook_count, flush=True)
 
         # Allocate fake memory for parameters

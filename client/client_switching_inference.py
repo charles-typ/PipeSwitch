@@ -24,11 +24,20 @@ def send_request(client, task_name, data):
     timestamp('client', 'after_inference_serialization')
 
     # Send Data
+    #time_1 = time.time()
     client.send(task_name_length_b)
+    #time_2 = time.time()
     client.send(task_name_b)
+    #time_3 = time.time()
     client.send(length_b)
+    #time_4 = time.time()
     client.send(data_b)
+    #time_5 = time.time()
     timestamp('client', 'after_request_%s' % task_name)
+    #print("Check time: 1 ", time_2 - time_1)
+    #print("Check time: 2 ", time_3 - time_2)
+    #print("Check time: 3 ", time_4 - time_3)
+    #print("Check time: 4 ", time_5 - time_4)
 
 def recv_response(client):
     reply_b = client.recv(4)
@@ -66,17 +75,21 @@ def main():
         if k == 0:
             time.sleep(2)
         # Send inference request
-        time.sleep(500 / 1000)
+        time.sleep(30 / 1000) # 56 16 10 8 16
+        #time.sleep(50 / 1000) # 360 16 32  56 32
+        #time.sleep(200 / 1000) # 360 64
+        # time.sleep(350 / 1000) # 360 128
+        #time.sleep(5 / 1000) # less than 16
         time_1 = time.time()
         send_request(client_inf_2, task_name_inf, data)
 
         # Recv inference reply
         recv_response(client_inf_2)
         time_2 = time.time()
-        print(time_2)
-        print(time_1)
+        print(time_2, flush=True)
+        print(time_1, flush=True)
         latency = (time_2 - time_1) * 1000
-        print(latency)
+        print(latency, flush=True)
         latency_list.append(latency)
 
         #time.sleep(1)
